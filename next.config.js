@@ -1,5 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // 1. Required for GitHub Pages deployment
+  output: "export",
+
+  // 2. Mandatory because GitHub Pages has no image optimization server
+  images: {
+    unoptimized: true,
+  },
+
+  // 3. Replace 'your-repo-name' with your actual repository name 
+  // (e.g., if your URL is iqmaa.github.io/portfolio, use "/portfolio")
+  basePath: "/your-repo-name",
+
+  // Note: headers() is ignored by "output: export" on GitHub Pages,
+  // but keeping it here won't break the build.
   async headers() {
     return [
       {
