@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { redirect } from "next/navigation";
+import { notFound } from "next/navigation"; // Changed from redirect for static export compatibility
 
 import { AnimatedSection } from "@/components/common/animated-section";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
@@ -18,6 +18,16 @@ interface ExperienceDetailPageProps {
     expId: string;
   }>;
 }
+
+// 1. Mandatory for static export: Provide the list of IDs to pre-render
+export async function generateStaticParams() {
+  return experiences.map((experience) => ({
+    expId: experience.id,
+  }));
+}
+
+// 2. Explicitly force static rendering
+export const dynamic = "force-static";
 
 // Helper function to extract year from date
 const getYearFromDate = (date: Date): string => {
@@ -63,7 +73,8 @@ export default async function ExperienceDetailPage({
   const experience = experiences.find((c) => c.id === expId);
 
   if (!experience) {
-    redirect("/experience");
+    // 3. Static exports handle 404s better via notFound() than dynamic redirects
+    notFound();
   }
 
   const tabItems = [
