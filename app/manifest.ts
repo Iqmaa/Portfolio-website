@@ -1,5 +1,8 @@
 import type { MetadataRoute } from "next";
 
+// Add this line to force the manifest to be generated as a static file during build
+export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Hikmah Olawore | Robotics Engineer",

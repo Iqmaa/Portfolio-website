@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
-
 import { siteConfig } from "@/config/site";
+
+// Add this line to ensure the sitemap is generated as a static file
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;

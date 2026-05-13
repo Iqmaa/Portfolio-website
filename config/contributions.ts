@@ -18,7 +18,7 @@ export const contributionsUnsorted: contributionsInterface[] = [ //add links  //
   //   contibutionDescription:
   //     "wrote articles for the chaoss blog",
   //   repoOwner: "CHAOSS Africa",
-  //   link: "https://github.com/namanbarkiya/niya-saas-template",
+  //   link: "",
   // },
   {
     repo: "hacktoberfest-mautic",
