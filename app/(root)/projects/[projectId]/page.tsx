@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { redirect } from "next/navigation";
+import { notFound } from "next/navigation"; // Changed from redirect for better static handling
 
 import { Icons } from "@/components/common/icons";
 import ProjectDescription from "@/components/projects/project-description";
@@ -18,13 +18,24 @@ interface ProjectPageProps {
   }>;
 }
 
-const githubUsername = "Iqmaa";
+// 1. Add this function to generate static paths at build time
+export async function generateStaticParams() {
+  return Projects.map((project) => ({
+    projectId: project.id,
+  }));
+}
+
+// 2. Force static rendering
+export const dynamic = "force-static";
 
 export default async function Project({ params }: ProjectPageProps) {
   const { projectId } = await params;
   let project = Projects.find((val) => val.id === projectId);
+  
   if (!project) {
-    redirect("/projects");
+    // 3. Use notFound() instead of redirect() for static pages 
+    // to ensure proper 404 behavior on GitHub Pages
+    notFound();
   }
 
   return (
@@ -41,7 +52,7 @@ export default async function Project({ params }: ProjectPageProps) {
       </Link>
       <div>
         <time
-          dateTime={Date.now().toString()}
+          dateTime={new Date().toISOString()}
           className="block text-sm text-muted-foreground"
         >
           {formatDateFromObj(project.startDate)}
@@ -109,7 +120,6 @@ export default async function Project({ params }: ProjectPageProps) {
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
           Description
         </h2>
-        {/* {<project.descriptionComponent />} */}
         <ProjectDescription
           paragraphs={project.descriptionDetails.paragraphs}
           bullets={project.descriptionDetails.bullets}
@@ -127,11 +137,11 @@ export default async function Project({ params }: ProjectPageProps) {
             </h3>
             <div>
               <p>{page.description}</p>
-              {page.imgArr.map((img, ind) => (
+              {page.imgArr.map((img, imgInd) => (
                 <Image
                   src={img}
-                  key={ind}
-                  alt={img}
+                  key={imgInd}
+                  alt={page.title}
                   width={720}
                   height={405}
                   className="my-4 rounded-md border bg-muted transition-colors"
