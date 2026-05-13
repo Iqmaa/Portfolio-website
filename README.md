@@ -1,149 +1,38 @@
-<a href="https://buymeachai.ezee.li/namanbarkiya" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dvt5vkfwz/image/upload/v1767625332/buy_chai_naman.png" alt="Buy Me A Chai" width="200"></a>
+[![MasterHead](https://github.com/Iqmaa/Iqmaa/blob/main/github%20banner.png)](https://linktr.ee/Iqma)
+<!-- <h1 align="center">Hi 👋, I'm Iqma</h1> -->
+<h3 align="center"> Software | Hardware | Reverse Engineer </h3>
+<!-- <i><p> Philomath, Writer, Opensource & Volunteering</h3></i> -->
+<!-- <img align="right" alt= "coding" width ="400" src= "[https://media.licdn.com/dms/image/D4D03AQGch_ZzOUZsAg/profile-displayphoto-shrink_800_800/0/1686728087894?e=1695859200&v=beta&t=3gtQBA58StUsERmndczJ_U1nkGIRytao3z5c_7yXCv8](https://media.istockphoto.com/vectors/arab-girl-working-at-home-or-in-office-with-laptop-vector-id1150873865?k=6&m=1150873865&s=170667a&w=0&h=8zSyc1ET5xUf27hpTIlJjPBhnfr6DQYH7gJZhWjgOhc=)"> -->
 
-# Next.js 16 Developer Portfolio Template
+- 👨‍💻 You can check out my projects at [https://github.com/Iqmaa/Iqmaa](https://github.com/Iqmaa/Iqmaa)
 
-A modern, responsive, and SEO-optimized **Next.js 16 portfolio template** designed for developers, designers, and professionals. This open-source project helps you showcase your skills, experience, and projects with an elegant interface that stands out. Built with server-side rendering, TypeScript, and the latest web standards for optimal performance.
+- 365-day Coding, CTF, and Robotics Streaks at [my github gist](https://gist.github.com/Iqmaa)
 
-## ✨ Key Features
+- 📝 I also write articles on [https://iqmacodes.hashnode.dev/](https://iqmacodes.hashnode.dev/)
 
-- **Professional Experience Timeline**: Showcase your career journey with a visually appealing timeline
-- **Project Showcase**: Display your technical projects with detailed information and live demos
-- **Multiple Themes**: Dark, Light, Retro, Cyberpunk, Aurora, Synthwave, and Paper themes
-- **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
-- **100% Performance Score**: Fully optimized for speed and Core Web Vitals
-- **SEO-Ready**: Structured data, meta tags, and optimized content
-- **Modern Tech Stack**: Next.js 16, React 19, TypeScript, Tailwind CSS, and shadcn/ui
-- **Easy Customization**: Well-organized code structure with minimal effort required
-- **Animations**: Subtle animations for engaging user experience
-- **Analytics Integration**: Ready for Google Analytics tracking
-- **Contact Form**: Functional contact form with validation
-- **Open Source**: Free to use and modify for your personal portfolio
+- 📫 connect with me on **[https://twitter.com/Iqma__](https://twitter.com/Iqma__)**
 
-## 🚀 Demo
+### Articles
+<!-- BLOG-POST-LIST:START -->
+- [Natural Language Processing(NLP) for Beginners](https://www.freecodecamp.org/news/natural-language-processing-techniques-for-beginners/)(FreeCodeCamp)
+- [What is supervised Learning](https://iqmacodes.hashnode.dev/what-is-supervised-learning)
+- [Beginner python project; making a quiz game in python](https://iqmacodes.hashnode.dev/how-to-make-a-quiz-game-in-python)
+- [An Introduction to Cybersecurity](https://iqmacodes.hashnode.dev/an-introduction-to-cybersecurity)
 
-View the live demo at [https://nbarkiya.xyz/](https://nbarkiya.xyz)
+<!-- BLOG-POST-LIST:END -->
 
-https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/Iqma__" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="iqma_" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/olawore hikmah" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="olawore hikmah" height="30" width="40" /></a>
+<a href="https://iqmacodes.hashnode.dev/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" alt="iqma" height="30" width="40" /></a>
+<a href="https://medium.com/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@iqma" height="30" width="40" /></a>
+<a href="/https://iqmacodes.hashnode.dev/rss.xml" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg" alt="https://iqmacodes.hashnode.dev/rss.xml" height="30" width="40" /></a>
+</p>
 
-## Ranks #1 on AI Search (top-notch AEO/GEO)
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
-https://github.com/user-attachments/assets/fc071310-9d1c-4832-877f-23f9569893d7
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=iqmaa&show_icons=true&locale=en&layout=compact" alt="iqmaa" /></p>
 
-## 🛠️ Tech Stack
-
-- **Framework**: [Next.js 16](https://nextjs.org/) with Turbopack
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **UI Library**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Form Handling**: Server actions with validation
-- **Analytics**: Google Analytics + Vercel Analytics
-- **Deployment**: [Vercel](https://vercel.com)
-
-## 🔧 Getting Started
-
-To get started with your own portfolio website:
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/namanbarkiya/minimal-next-portfolio.git my-portfolio
-   cd my-portfolio
-   ```
-
-2. Copy the contents of `.env.copy` to a new `.env` file and fill in the required information.
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your web browser to see the website.
-
-## 🎨 Customization
-
-Easily personalize your portfolio using the configuration files below:
-
-| Section            | How to Customize                                       | File Location             |
-| ------------------ | ------------------------------------------------------ | ------------------------- |
-| **Personal Info**  | Edit your name, bio, and social links                  | `config/site.ts`          |
-| **Skills**         | Add or modify the technologies and skills you showcase | `config/skills.ts`        |
-| **Projects**       | Highlight your technical projects                      | `config/projects.ts`      |
-| **Experience**     | Add your work and professional experience              | `config/experience.ts`    |
-| **Contributions**  | Display open-source/community contributions            | `config/contributions.ts` |
-| **Colors & Theme** | Customize color palette and themes                     | `tailwind.config.js`      |
-
-All configuration files are well-organized and documented for a smooth customization process.
-
-## 🌟 Features In Detail
-
-### Professional Experience Timeline
-
-An interactive, animated timeline that showcases your career journey with expandable sections for details about each position and company.
-
-### Project Showcase
-
-Display your technical projects with detailed information, technologies used, live demo links, and comprehensive project descriptions.
-
-### Skills Showcase
-
-Visually represent your technical and soft skills with customizable ratings and categories.
-
-### Contact Form Integration
-
-A ready-to-use contact form that can connect to various backend services.
-
-### SEO Optimization
-
-Built-in SEO features with proper meta tags, structured data, and semantic HTML.
-
-## 📱 Performance and Responsiveness
-
-![best-portfolio-website-score](https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/3fb9c94d-9d99-4e98-92ea-14aadc91b568)
-![100-score-vercel](https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/7cfe28cc-b619-4199-9dab-1cf16723b86d)
-
-This template is optimized for:
-
-- 100% Lighthouse score
-- Excellent Core Web Vitals metrics
-- Responsive design across all device sizes
-- Fast loading times with proper image optimization
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgements
-
-- Design inspired by modern portfolio best practices
-- Built by [Naman Barkiya](https://github.com/namanbarkiya)
-- Icons from [Lucide](https://lucide.dev/)
-
-## 💻 Deploy on Vercel
-
-The easiest way to deploy your portfolio is using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), the platform from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=namanbarkiya/minimal-next-portfolio&type=Date)](https://star-history.com/#namanbarkiya/minimal-next-portfolio&Date)
-
----
-
-**Built with ❤️ by [Naman Barkiya](https://github.com/namanbarkiya)**
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=iqmaa&" alt="iqmaa" /></p>

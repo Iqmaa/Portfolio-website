@@ -70,72 +70,13 @@ export function ContactForm() {
     }
   }
 
-  return (
-    <Form {...form}>
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 min-w-full"
-      >
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Name</FormLabel>
-              <FormControl>
-                <Input placeholder="Enter your name" {...field} />
-              </FormControl>
-              {/* <FormDescription>
-                                This is your public display name.
-                            </FormDescription> */}
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email</FormLabel>
-              <FormControl>
-                <Input placeholder="Enter your email" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Message</FormLabel>
-              <FormControl>
-                <Textarea placeholder="Enter your message" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="social"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Social (optional)</FormLabel>
-              <FormControl>
-                <Input placeholder="Link for social account" {...field} />
-              </FormControl>
-              {/* <FormDescription>
-                                This is your public display name.
-                            </FormDescription> */}
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit">Submit</Button>
-      </form>
-    </Form>
+return (
+    <div className="flex flex-col items-center justify-center py-10 border rounded-xl bg-card">
+      <h3 className="text-xl font-semibold mb-4">Want to reach out?</h3>
+      <a href="cryptiqchronicles@gmail.com" 
+        className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors">
+        Send me an Email Directly
+      </a>
+    </div>
   );
 }

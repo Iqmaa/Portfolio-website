@@ -13,12 +13,14 @@ export const metadata: Metadata = {
 
 const renderContent = (tabVal: string) => {
   let projectArr = Projects;
-  if (tabVal === "personal") {
-    projectArr = projectArr.filter((val) => val.type === "Personal");
-  } else if (tabVal === "professional") {
-    projectArr = projectArr.filter((val) => val.type === "Professional");
+  if (tabVal === "Robotics") {
+    projectArr = projectArr.filter((val) => val.type === "Robotics");
+  } else if (tabVal === "Cybersecurity") {
+    projectArr = projectArr.filter((val) => val.type === "Cybersecurity");
+  } else if (tabVal === "Technical Writing") {
+    projectArr = projectArr.filter((val) => val.type === "Technical Writing");
   }
-
+  
   return (
     <div className="mx-auto my-4 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 static">
       {projectArr.map((project) => (
@@ -36,14 +38,19 @@ export default function ProjectsPage() {
       content: renderContent("all"),
     },
     {
-      value: "personal",
-      label: "Personal",
-      content: renderContent("personal"),
+      value: "Robotics",
+      label: "Robotics",
+      content: renderContent("Robotics"),
     },
     {
-      value: "professional",
-      label: "Professional",
-      content: renderContent("professional"),
+      value: "Cybersecurity",
+      label: "Cybersecurity",
+      content: renderContent("Cybersecurity"),
+    },
+    {
+      value: "Technical Writing",
+      label: "Technical Writing",
+      content: renderContent("Technical Writing"),
     },
   ];
 

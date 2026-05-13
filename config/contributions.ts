@@ -5,41 +5,34 @@ export interface contributionsInterface {
   link: string;
 }
 
-export const contributionsUnsorted: contributionsInterface[] = [
+export const contributionsUnsorted: contributionsInterface[] = [ //add links  //remove private details in resume
   {
-    repo: "minimal-next-portfolio",
+    repo: "Free-code-camp",
     contibutionDescription:
-      "Open-source Next.js portfolio template. Trusted and forked by developers worldwide (130+ GitHub stars).",
-    repoOwner: "namanbarkiya",
-    link: "https://github.com/namanbarkiya/minimal-next-portfolio",
+      "Contributed to the freecodecamp publication",
+    repoOwner: "FreeCodeCamp",
+    link: "https://www.freecodecamp.org/news/author/Iqma/",
   },
+  // {
+  //   repo: "hacktoberfest-chaoss",
+  //   contibutionDescription:
+  //     "wrote articles for the chaoss blog",
+  //   repoOwner: "CHAOSS Africa",
+  //   link: "https://github.com/namanbarkiya/niya-saas-template",
+  // },
   {
-    repo: "niya-saas-template",
+    repo: "hacktoberfest-mautic",
     contibutionDescription:
-      "Modern Next.js SaaS template. Production-ready starter for devs and AI startups (30+ GitHub stars).",
-    repoOwner: "namanbarkiya",
-    link: "https://github.com/namanbarkiya/niya-saas-template",
+      "Helped to improve Mautic's documentation",
+    repoOwner: "Mautic",
+    link: "https://github.com/mautic/mautic-community-handbook/pull/230",
   },
-  {
-    repo: "autogen",
+    {
+    repo: "hacktoberfest-UmbracoDocs",
     contibutionDescription:
-      "Improved the gallery component to showcase the community work.",
-    repoOwner: "Microsoft",
-    link: "https://github.com/microsoft/autogen/pull/1445",
-  },
-  {
-    repo: "creativecommons",
-    contibutionDescription:
-      "Closed Issue: Fixed navbar issue on the main website of creative common.",
-    repoOwner: "Creative Commons",
-    link: "https://github.com/creativecommons/creativecommons.github.io-source/pull/738",
-  },
-  {
-    repo: "creativecommons",
-    contibutionDescription:
-      "Added section for 'Other Opportunities' on main page.",
-    repoOwner: "Creative Commons",
-    link: "https://github.com/creativecommons/creativecommons.github.io-source/pull/719",
+      "Helped to improve umbraco's documentation",
+    repoOwner: "Umbraco",
+    link: "https://github.com/umbraco/UmbracoDocs/pull/6501",
   },
 ];
 
