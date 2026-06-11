@@ -1,0 +1,6540 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.env.copy
+.github/workflows/nextjs.yml
+.gitignore
+.prettierrc
+app/(root)/contact/page.tsx
+app/(root)/contributions/page.tsx
+app/(root)/experience/[expId]/page.tsx
+app/(root)/experience/page.tsx
+app/(root)/layout.tsx
+app/(root)/page.tsx
+app/(root)/projects/[projectId]/page.tsx
+app/(root)/projects/page.tsx
+app/(root)/resume/page.tsx
+app/(root)/skills/page.tsx
+app/api/contact/route.ts
+app/favicon.ico
+app/globals.css
+app/layout.tsx
+app/manifest.ts
+app/sitemap.ts
+assets/fonts/CalSans-SemiBold.ttf
+assets/fonts/CalSans-SemiBold.woff
+assets/fonts/CalSans-SemiBold.woff2
+assets/fonts/Inter-Bold.ttf
+assets/fonts/Inter-Regular.ttf
+components.json
+components/common/analytics.tsx
+components/common/animated-link.tsx
+components/common/animated-page-transition.tsx
+components/common/animated-section.tsx
+components/common/animated-text.tsx
+components/common/client-page-wrapper.tsx
+components/common/icons.tsx
+components/common/main-nav.tsx
+components/common/mobile-nav.tsx
+components/common/mode-toggle.tsx
+components/common/page-container.tsx
+components/common/page-header.tsx
+components/common/scroll-animation.tsx
+components/common/site-footer.tsx
+components/common/theme-provider.tsx
+components/contact/github-redirect-card.tsx
+components/contributions/contribution-card.tsx
+components/experience/experience-card.tsx
+components/experience/timeline.tsx
+components/forms/contact-form.tsx
+components/modals/custom-modal.tsx
+components/projects/project-card.tsx
+components/projects/project-description.tsx
+components/skills/rating.tsx
+components/skills/skills-card.tsx
+components/ui/accordion.tsx
+components/ui/button.tsx
+components/ui/card.tsx
+components/ui/chip-container.tsx
+components/ui/chip.tsx
+components/ui/custom-tooltip.tsx
+components/ui/dialog.tsx
+components/ui/dropdown-menu.tsx
+components/ui/form.tsx
+components/ui/input.tsx
+components/ui/label.tsx
+components/ui/modal.tsx
+components/ui/responsive-tabs.tsx
+components/ui/tabs.tsx
+components/ui/textarea.tsx
+components/ui/toast.tsx
+components/ui/toaster.tsx
+components/ui/tooltip.tsx
+components/ui/use-toast.ts
+config/constants.ts
+config/contributions.ts
+config/experience.ts
+config/pages.ts
+config/projects.ts
+config/routes.ts
+config/site.ts
+config/skills.ts
+config/socials.ts
+eslint.config.mjs
+hooks/use-lock-body.ts
+hooks/use-modal-store.ts
+information/overview.md
+information/structure.md
+lib/utils.ts
+LICENSE
+next.config.js
+package.json
+postcss.config.js
+providers/animation-provider.tsx
+providers/modal-provider.tsx
+public/experience/aurora_robotics_logo.jfif
+public/experience/RAIN_logo.jfif
+public/experience/unilag_engineering_design_studio_logo.jfif
+public/experience/zuri_team_logo.jfif
+public/favicon.ico
+public/logo.png
+public/next.svg
+public/profile-img.jpg
+public/projects/3D Designs/All arm views.png
+public/projects/3D Designs/Arm overview 2.png
+public/projects/3D Designs/logo.png
+public/projects/3D Designs/Semi humanoid.png
+public/projects/3D Designs/web_3.png
+public/projects/CTFs/cryptography.png
+public/projects/CTFs/CTF logo.png
+public/projects/CTFs/Pico.png
+public/projects/CTFs/reveng.png
+public/projects/Electronics/car code.png
+public/projects/Electronics/Car.png
+public/projects/Electronics/led code.png
+public/projects/Electronics/LED.png
+public/projects/Electronics/logo.png
+public/projects/general blog/Blog.png
+public/projects/general blog/code_blog.webp
+public/projects/general blog/logo.png
+public/projects/general blog/nlp_blog.webp
+public/projects/Rev-eng blog/calculator.png
+public/projects/Rev-eng blog/hello world.png
+public/projects/Rev-eng blog/logo.png
+public/projects/Rev-eng blog/pdf_opt.webp
+public/projects/Rev-eng blog/rev-eng blog.png
+public/projects/Rev-eng blog/weirdsnake.png
+public/projects/Surro/Arm overview 2.png
+public/projects/Surro/logo.png
+public/projects/Surro/overall arm movement .mp4
+public/projects/Surro/Surro overview.png
+public/projects/TMDB/TMDB API 1.png
+public/projects/TMDB/TMDB API 2.png
+public/projects/TMDB/TMDB intro.png
+public/projects/TMDB/TMDB logo.png
+public/projects/TMDB/TMDB params.png
+public/projects/TMDB/TMDB postman.png
+public/robots.txt
+public/vercel.svg
+README.md
+tailwind.config.js
+tsconfig.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/next.svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>
+</file>
+
+<file path="public/vercel.svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 283 64"><path fill="black" d="M141 16c-11 0-19 7-19 18s9 18 20 18c7 0 13-3 16-7l-7-5c-2 3-6 4-9 4-5 0-9-3-10-7h28v-3c0-11-8-18-19-18zm-9 15c1-4 4-7 9-7s8 3 9 7h-18zm117-15c-11 0-19 7-19 18s9 18 20 18c6 0 12-3 16-7l-8-5c-2 3-5 4-8 4-5 0-9-3-11-7h28l1-3c0-11-8-18-19-18zm-10 15c2-4 5-7 10-7s8 3 9 7h-19zm-39 3c0 6 4 10 10 10 4 0 7-2 9-5l8 5c-3 5-9 8-17 8-11 0-19-7-19-18s8-18 19-18c8 0 14 3 17 8l-8 5c-2-3-5-5-9-5-6 0-10 4-10 10zm83-29v46h-9V5h9zM37 0l37 64H0L37 0zm92 5-27 48L74 5h10l18 30 17-30h10zm59 12v10l-3-1c-6 0-10 4-10 10v15h-9V17h9v9c0-5 6-9 13-9z"/></svg>
+</file>
+
+<file path=".prettierrc">
+{
+  "useTabs": false,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "jsxBracketSameLine": false,
+  "noSemi": true,
+  "plugins": ["prettier-plugin-organize-imports"]
+}
+</file>
+
+<file path="components.json">
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "default",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.js",
+    "css": "app/globals.css",
+    "baseColor": "zinc",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils"
+  }
+}
+</file>
+
+<file path="components/common/animated-link.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ReactNode } from "react";
+
+interface AnimatedLinkProps {
+  href: string;
+  children: ReactNode;
+  className?: string;
+  onClick?: () => void;
+  target?: string;
+  rel?: string;
+}
+
+export const AnimatedLink = ({
+  href,
+  children,
+  className = "",
+  onClick,
+  target,
+  rel,
+}: AnimatedLinkProps) => {
+  return (
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}
+    >
+      <Link
+        href={href}
+        className={className}
+        onClick={onClick}
+        target={target}
+        rel={rel}
+      >
+        {children}
+      </Link>
+    </motion.div>
+  );
+};
+</file>
+
+<file path="components/common/scroll-animation.tsx">
+"use client";
+
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ReactNode, useRef } from "react";
+
+interface ScrollAnimationProps {
+  children: ReactNode;
+  className?: string;
+  effect?: "fade" | "zoom" | "slide" | "rotate";
+}
+
+export const ScrollAnimation = ({
+  children,
+  className = "",
+  effect = "fade",
+}: ScrollAnimationProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  // Create transform values outside of any function
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0.2, 1]);
+  const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+  const xOffset = useTransform(scrollYProgress, [0, 0.5], [-50, 0]);
+  const rotation = useTransform(scrollYProgress, [0, 0.5], [-10, 0]);
+
+  // Get the appropriate animation style based on the effect
+  const animationStyle = (() => {
+    switch (effect) {
+      case "fade":
+        return { opacity };
+      case "zoom":
+        return { scale, opacity };
+      case "slide":
+        return { x: xOffset, opacity };
+      case "rotate":
+        return { rotate: rotation, opacity };
+      default:
+        return { opacity };
+    }
+  })();
+
+  return (
+    <motion.div ref={ref} className={className} style={animationStyle}>
+      {children}
+    </motion.div>
+  );
+};
+</file>
+
+<file path="components/experience/experience-card.tsx">
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+import { Icons } from "@/components/common/icons";
+import { Button } from "@/components/ui/button";
+import { ExperienceInterface } from "@/config/experience";
+
+// Helper function to extract year from date
+const getYearFromDate = (date: Date): string => {
+  return new Date(date).getFullYear().toString();
+};
+
+// Helper function to get duration text
+const getDurationText = (
+  startDate: Date,
+  endDate: Date | "Present"
+): string => {
+  const startYear = getYearFromDate(startDate);
+  const endYear =
+    typeof endDate === "string" ? "Present" : getYearFromDate(endDate);
+  return `${startYear} - ${endYear}`;
+};
+
+interface ExperienceCardProps {
+  experience: ExperienceInterface;
+}
+
+const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
+  return (
+    <div className="group relative overflow-hidden rounded-lg border bg-background p-4 sm:p-6 transition-all duration-300">
+      <div className="flex items-start gap-3 sm:gap-4">
+        {experience.logo && (
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg border-2 border-border overflow-hidden bg-white flex-shrink-0">
+            <Image
+              src={experience.logo}
+              alt={experience.company}
+              width={48}
+              height={48}
+              className="w-full h-full object-contain p-2"
+            />
+          </div>
+        )}
+        <div className="flex-1 min-w-0">
+          <div className="flex flex-col gap-1 sm:gap-2">
+            <div className="flex items-start sm:items-center gap-2">
+              <h3 className="text-base sm:text-lg font-bold text-foreground line-clamp-2 sm:line-clamp-1">
+                {experience.position}
+              </h3>
+              {experience.companyUrl && (
+                <a
+                  href={experience.companyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors flex-shrink-0 mt-0.5 sm:mt-0"
+                >
+                  <Icons.externalLink className="w-4 h-4" />
+                </a>
+              )}
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-sm text-muted-foreground">
+              <span className="font-medium">{experience.company}</span>
+              <span className="hidden sm:inline">•</span>
+              <span>{experience.location}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+                {getDurationText(experience.startDate, experience.endDate)}
+              </span>
+            </div>
+          </div>
+          <p className="mt-2 sm:mt-3 text-sm text-muted-foreground line-clamp-2">
+            {experience.description[0]}
+          </p>
+          <div className="mt-3 sm:mt-4 flex flex-wrap gap-1">
+            {experience.skills.slice(0, 2).map((skill, index) => (
+              <span
+                key={index}
+                className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-muted text-muted-foreground"
+              >
+                {skill}
+              </span>
+            ))}
+            {experience.skills.length > 2 && (
+              <span className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-muted text-muted-foreground">
+                +{experience.skills.length - 2} more
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+      <div className="mt-3 sm:mt-4 flex justify-end">
+        <Button
+          variant="outline"
+          size="sm"
+          className="rounded-lg w-full sm:w-auto"
+          asChild
+        >
+          <Link href={`/experience/${experience.id}`}>
+            View Details
+            <Icons.chevronRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default ExperienceCard;
+</file>
+
+<file path="components/experience/timeline.tsx">
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+import { AnimatedSection } from "@/components/common/animated-section";
+import { Icons } from "@/components/common/icons";
+import { Button } from "@/components/ui/button";
+import { ExperienceInterface } from "@/config/experience";
+
+// Helper function to extract year from date
+const getYearFromDate = (date: Date): string => {
+  return new Date(date).getFullYear().toString();
+};
+
+// Helper function to get duration text
+const getDurationText = (
+  startDate: Date,
+  endDate: Date | "Present"
+): string => {
+  const startYear = getYearFromDate(startDate);
+  const endYear =
+    typeof endDate === "string" ? "Present" : getYearFromDate(endDate);
+  return `${startYear} - ${endYear}`;
+};
+
+interface TimelineProps {
+  experiences: ExperienceInterface[];
+}
+
+const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
+  // Sort experiences by date (most recent first)
+  const sortedExperiences = [...experiences].sort((a, b) => {
+    const dateA = a.endDate === "Present" ? new Date() : a.endDate;
+    const dateB = b.endDate === "Present" ? new Date() : b.endDate;
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  return (
+    <div className="space-y-4">
+      {sortedExperiences.map((experience, index) => (
+        <AnimatedSection
+          key={experience.id}
+          delay={0.1 * (index + 1)}
+          direction="up"
+        >
+          <div className="w-full p-4 sm:p-6 bg-background border border-border rounded-lg transition-all duration-300">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+              <div className="flex items-start gap-4 flex-1 min-w-0">
+                {experience.logo && (
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg border-2 border-border overflow-hidden bg-white flex-shrink-0">
+                    <Image
+                      src={experience.logo}
+                      alt={experience.company}
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-contain p-2"
+                    />
+                  </div>
+                )}
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground">
+                      {experience.position}
+                    </h3>
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-primary/10 text-primary border border-primary/20 w-fit">
+                      {getDurationText(
+                        experience.startDate,
+                        experience.endDate
+                      )}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-sm font-medium text-muted-foreground">
+                      {experience.company}
+                    </span>
+                    {experience.companyUrl && (
+                      <a
+                        href={experience.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        <Icons.externalLink className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    {experience.location}
+                  </p>
+                  <p className="text-sm text-muted-foreground line-clamp-2">
+                    {experience.description[0]}
+                  </p>
+                </div>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                className="rounded-lg w-full sm:w-auto"
+                asChild
+              >
+                <Link href={`/experience/${experience.id}`}>
+                  View Details
+                  <Icons.chevronRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </AnimatedSection>
+      ))}
+    </div>
+  );
+};
+
+export default Timeline;
+</file>
+
+<file path="components/projects/project-description.tsx">
+import React from "react";
+
+const ProjectDescription: React.FC<{
+  paragraphs: string[];
+  bullets: string[];
+}> = ({ paragraphs, bullets }) => {
+  return (
+    <div>
+      {paragraphs.map((paragraph, index) => (
+        <p className="mb-4" key={index}>
+          {paragraph}
+        </p>
+      ))}
+      <ul className="list-disc pl-6 mt-4">
+        {bullets.map((bullet, index) => (
+          <li key={index}>{bullet}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ProjectDescription;
+</file>
+
+<file path="components/ui/button.tsx">
+import { Slot } from "@radix-ui/react-slot";
+import { cva, type VariantProps } from "class-variance-authority";
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const buttonVariants = cva(
+  "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        destructive:
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+        outline:
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
+        link: "text-primary underline-offset-4 hover:underline",
+      },
+      size: {
+        default: "h-10 px-4 py-2",
+        sm: "h-9 rounded-md px-3",
+        lg: "h-11 rounded-md px-8",
+        icon: "h-10 w-10",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  }
+);
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
+}
+
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button";
+    return (
+      <Comp
+        className={cn(buttonVariants({ variant, size, className }))}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
+Button.displayName = "Button";
+
+export { Button, buttonVariants };
+</file>
+
+<file path="components/ui/card.tsx">
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const Card = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn(
+      "rounded-lg border bg-card text-card-foreground shadow-sm",
+      className
+    )}
+    {...props}
+  />
+));
+Card.displayName = "Card";
+
+const CardHeader = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn("flex flex-col space-y-1.5 p-6", className)}
+    {...props}
+  />
+));
+CardHeader.displayName = "CardHeader";
+
+const CardTitle = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLHeadingElement>
+>(({ className, ...props }, ref) => (
+  <h3
+    ref={ref}
+    className={cn(
+      "text-2xl font-semibold leading-none tracking-tight",
+      className
+    )}
+    {...props}
+  />
+));
+CardTitle.displayName = "CardTitle";
+
+const CardDescription = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
+>(({ className, ...props }, ref) => (
+  <p
+    ref={ref}
+    className={cn("text-sm text-muted-foreground", className)}
+    {...props}
+  />
+));
+CardDescription.displayName = "CardDescription";
+
+const CardContent = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
+));
+CardContent.displayName = "CardContent";
+
+const CardFooter = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn("flex items-center p-6 pt-0", className)}
+    {...props}
+  />
+));
+CardFooter.displayName = "CardFooter";
+
+export {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+};
+</file>
+
+<file path="components/ui/dropdown-menu.tsx">
+"use client";
+
+import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
+import { Check, ChevronRight, Circle } from "lucide-react";
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const DropdownMenu = DropdownMenuPrimitive.Root;
+
+const DropdownMenuTrigger = DropdownMenuPrimitive.Trigger;
+
+const DropdownMenuGroup = DropdownMenuPrimitive.Group;
+
+const DropdownMenuPortal = DropdownMenuPrimitive.Portal;
+
+const DropdownMenuSub = DropdownMenuPrimitive.Sub;
+
+const DropdownMenuRadioGroup = DropdownMenuPrimitive.RadioGroup;
+
+const DropdownMenuSubTrigger = React.forwardRef<
+  React.ElementRef<typeof DropdownMenuPrimitive.SubTrigger>,
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.SubTrigger> & {
+    inset?: boolean;
+  }
+>(({ className, inset, children, ...props }, ref) => (
+  <DropdownMenuPrimitive.SubTrigger
+    ref={ref}
+    className={cn(
+      "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent data-[state=open]:bg-accent",
+      inset && "pl-8",
+      className
+    )}
+    {...props}
+  >
+    {children}
+    <ChevronRight className="ml-auto h-4 w-4" />
+  </DropdownMenuPrimitive.SubTrigger>
+));
+DropdownMenuSubTrigger.displayName =
+  DropdownMenuPrimitive.SubTrigger.displayName;
+
+const DropdownMenuSubContent = React.forwardRef<
+  React.ElementRef<typeof DropdownMenuPrimitive.SubContent>,
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.SubContent>
+>(({ className, ...props }, ref) => (
+  <DropdownMenuPrimitive.SubContent
+    ref={ref}
+    className={cn(
+      "z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+      className
+    )}
+    {...props}
+  />
+));
+DropdownMenuSubContent.displayName =
+  DropdownMenuPrimitive.SubContent.displayName;
+
+const DropdownMenuContent = React.forwardRef<
+  React.ElementRef<typeof DropdownMenuPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Content>
+>(({ className, sideOffset = 4, ...props }, ref) => (
+  <DropdownMenuPrimitive.Portal>
+    <DropdownMenuPrimitive.Content
+      ref={ref}
+      sideOffset={sideOffset}
+      className={cn(
+        "z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+        className
+      )}
+      {...props}
+    />
+  </DropdownMenuPrimitive.Portal>
+));
+DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName;
+
+const DropdownMenuItem = React.forwardRef<
+  React.ElementRef<typeof DropdownMenuPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Item> & {
+    inset?: boolean;
+  }
+>(({ className, inset, ...props }, ref) => (
+  <DropdownMenuPrimitive.Item
+    ref={ref}
+    className={cn(
+      "relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+      inset && "pl-8",
+      className
+    )}
+    {...props}
+  />
+));
+DropdownMenuItem.displayName = DropdownMenuPrimitive.Item.displayName;
+
+const DropdownMenuCheckboxItem = React.forwardRef<
+  React.ElementRef<typeof DropdownMenuPrimitive.CheckboxItem>,
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.CheckboxItem>
+>(({ className, children, checked, ...props }, ref) => (
+  <DropdownMenuPrimitive.CheckboxItem
+    ref={ref}
+    className={cn(
+      "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+      className
+    )}
+    checked={checked}
+    {...props}
+  >
+    <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+      <DropdownMenuPrimitive.ItemIndicator>
+        <Check className="h-4 w-4" />
+      </DropdownMenuPrimitive.ItemIndicator>
+    </span>
+    {children}
+  </DropdownMenuPrimitive.CheckboxItem>
+));
+DropdownMenuCheckboxItem.displayName =
+  DropdownMenuPrimitive.CheckboxItem.displayName;
+
+const DropdownMenuRadioItem = React.forwardRef<
+  React.ElementRef<typeof DropdownMenuPrimitive.RadioItem>,
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.RadioItem>
+>(({ className, children, ...props }, ref) => (
+  <DropdownMenuPrimitive.RadioItem
+    ref={ref}
+    className={cn(
+      "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+      className
+    )}
+    {...props}
+  >
+    <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+      <DropdownMenuPrimitive.ItemIndicator>
+        <Circle className="h-2 w-2 fill-current" />
+      </DropdownMenuPrimitive.ItemIndicator>
+    </span>
+    {children}
+  </DropdownMenuPrimitive.RadioItem>
+));
+DropdownMenuRadioItem.displayName = DropdownMenuPrimitive.RadioItem.displayName;
+
+const DropdownMenuLabel = React.forwardRef<
+  React.ElementRef<typeof DropdownMenuPrimitive.Label>,
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Label> & {
+    inset?: boolean;
+  }
+>(({ className, inset, ...props }, ref) => (
+  <DropdownMenuPrimitive.Label
+    ref={ref}
+    className={cn(
+      "px-2 py-1.5 text-sm font-semibold",
+      inset && "pl-8",
+      className
+    )}
+    {...props}
+  />
+));
+DropdownMenuLabel.displayName = DropdownMenuPrimitive.Label.displayName;
+
+const DropdownMenuSeparator = React.forwardRef<
+  React.ElementRef<typeof DropdownMenuPrimitive.Separator>,
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Separator>
+>(({ className, ...props }, ref) => (
+  <DropdownMenuPrimitive.Separator
+    ref={ref}
+    className={cn("-mx-1 my-1 h-px bg-muted", className)}
+    {...props}
+  />
+));
+DropdownMenuSeparator.displayName = DropdownMenuPrimitive.Separator.displayName;
+
+const DropdownMenuShortcut = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLSpanElement>) => {
+  return (
+    <span
+      className={cn("ml-auto text-xs tracking-widest opacity-60", className)}
+      {...props}
+    />
+  );
+};
+DropdownMenuShortcut.displayName = "DropdownMenuShortcut";
+
+export {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+};
+</file>
+
+<file path="components/ui/toast.tsx">
+import * as ToastPrimitives from "@radix-ui/react-toast";
+import { cva, type VariantProps } from "class-variance-authority";
+import { X } from "lucide-react";
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const ToastProvider = ToastPrimitives.Provider;
+
+const ToastViewport = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitives.Viewport>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Viewport>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitives.Viewport
+    ref={ref}
+    className={cn(
+      "fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]",
+      className
+    )}
+    {...props}
+  />
+));
+ToastViewport.displayName = ToastPrimitives.Viewport.displayName;
+
+const toastVariants = cva(
+  "group pointer-events-auto relative flex w-full items-center justify-between space-x-4 overflow-hidden rounded-md border p-6 pr-8 shadow-lg transition-all data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=move]:transition-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[swipe=end]:animate-out data-[state=closed]:fade-out-80 data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-top-full data-[state=open]:sm:slide-in-from-bottom-full",
+  {
+    variants: {
+      variant: {
+        default: "border bg-background",
+        destructive:
+          "destructive group border-destructive bg-destructive text-destructive-foreground",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
+);
+
+const Toast = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitives.Root>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Root> &
+    VariantProps<typeof toastVariants>
+>(({ className, variant, ...props }, ref) => {
+  return (
+    <ToastPrimitives.Root
+      ref={ref}
+      className={cn(toastVariants({ variant }), className)}
+      {...props}
+    />
+  );
+});
+Toast.displayName = ToastPrimitives.Root.displayName;
+
+const ToastAction = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitives.Action>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Action>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitives.Action
+    ref={ref}
+    className={cn(
+      "inline-flex h-8 shrink-0 items-center justify-center rounded-md border bg-transparent px-3 text-sm font-medium ring-offset-background transition-colors hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group-[.destructive]:border-muted/40 group-[.destructive]:hover:border-destructive/30 group-[.destructive]:hover:bg-destructive group-[.destructive]:hover:text-destructive-foreground group-[.destructive]:focus:ring-destructive",
+      className
+    )}
+    {...props}
+  />
+));
+ToastAction.displayName = ToastPrimitives.Action.displayName;
+
+const ToastClose = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitives.Close>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Close>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitives.Close
+    ref={ref}
+    className={cn(
+      "absolute right-2 top-2 rounded-md p-1 text-foreground/50 opacity-0 transition-opacity hover:text-foreground focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-red-50 group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600",
+      className
+    )}
+    toast-close=""
+    {...props}
+  >
+    <X className="h-4 w-4" />
+  </ToastPrimitives.Close>
+));
+ToastClose.displayName = ToastPrimitives.Close.displayName;
+
+const ToastTitle = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitives.Title>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Title>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitives.Title
+    ref={ref}
+    className={cn("text-sm font-semibold", className)}
+    {...props}
+  />
+));
+ToastTitle.displayName = ToastPrimitives.Title.displayName;
+
+const ToastDescription = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitives.Description>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Description>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitives.Description
+    ref={ref}
+    className={cn("text-sm opacity-90", className)}
+    {...props}
+  />
+));
+ToastDescription.displayName = ToastPrimitives.Description.displayName;
+
+type ToastProps = React.ComponentPropsWithoutRef<typeof Toast>;
+
+type ToastActionElement = React.ReactElement<typeof ToastAction>;
+
+export {
+  Toast,
+  ToastAction,
+  ToastClose,
+  ToastDescription,
+  ToastProvider,
+  ToastTitle,
+  ToastViewport,
+  type ToastActionElement,
+  type ToastProps,
+};
+</file>
+
+<file path="components/ui/toaster.tsx">
+"use client";
+
+import {
+  Toast,
+  ToastClose,
+  ToastDescription,
+  ToastProvider,
+  ToastTitle,
+  ToastViewport,
+} from "@/components/ui/toast";
+import { useToast } from "@/components/ui/use-toast";
+
+export function Toaster() {
+  const { toasts } = useToast();
+
+  return (
+    <ToastProvider>
+      {toasts.map(function ({ id, title, description, action, ...props }) {
+        return (
+          <Toast key={id} {...props}>
+            <div className="grid gap-1">
+              {title && <ToastTitle>{title}</ToastTitle>}
+              {description && (
+                <ToastDescription>{description}</ToastDescription>
+              )}
+            </div>
+            {action}
+            <ToastClose />
+          </Toast>
+        );
+      })}
+      <ToastViewport />
+    </ToastProvider>
+  );
+}
+</file>
+
+<file path="components/ui/use-toast.ts">
+// Inspired by react-hot-toast library
+import * as React from "react";
+
+import type { ToastActionElement, ToastProps } from "@/components/ui/toast";
+
+const TOAST_LIMIT = 1;
+const TOAST_REMOVE_DELAY = 1000000;
+
+type ToasterToast = ToastProps & {
+  id: string;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
+  action?: ToastActionElement;
+};
+
+const actionTypes = {
+  ADD_TOAST: "ADD_TOAST",
+  UPDATE_TOAST: "UPDATE_TOAST",
+  DISMISS_TOAST: "DISMISS_TOAST",
+  REMOVE_TOAST: "REMOVE_TOAST",
+} as const;
+
+let count = 0;
+
+function genId() {
+  count = (count + 1) % Number.MAX_VALUE;
+  return count.toString();
+}
+
+type ActionType = typeof actionTypes;
+
+type Action =
+  | {
+      type: ActionType["ADD_TOAST"];
+      toast: ToasterToast;
+    }
+  | {
+      type: ActionType["UPDATE_TOAST"];
+      toast: Partial<ToasterToast>;
+    }
+  | {
+      type: ActionType["DISMISS_TOAST"];
+      toastId?: ToasterToast["id"];
+    }
+  | {
+      type: ActionType["REMOVE_TOAST"];
+      toastId?: ToasterToast["id"];
+    };
+
+interface State {
+  toasts: ToasterToast[];
+}
+
+const toastTimeouts = new Map<string, ReturnType<typeof setTimeout>>();
+
+const addToRemoveQueue = (toastId: string) => {
+  if (toastTimeouts.has(toastId)) {
+    return;
+  }
+
+  const timeout = setTimeout(() => {
+    toastTimeouts.delete(toastId);
+    dispatch({
+      type: "REMOVE_TOAST",
+      toastId: toastId,
+    });
+  }, TOAST_REMOVE_DELAY);
+
+  toastTimeouts.set(toastId, timeout);
+};
+
+export const reducer = (state: State, action: Action): State => {
+  switch (action.type) {
+    case "ADD_TOAST":
+      return {
+        ...state,
+        toasts: [action.toast, ...state.toasts].slice(0, TOAST_LIMIT),
+      };
+
+    case "UPDATE_TOAST":
+      return {
+        ...state,
+        toasts: state.toasts.map((t) =>
+          t.id === action.toast.id ? { ...t, ...action.toast } : t
+        ),
+      };
+
+    case "DISMISS_TOAST": {
+      const { toastId } = action;
+
+      // ! Side effects ! - This could be extracted into a dismissToast() action,
+      // but I'll keep it here for simplicity
+      if (toastId) {
+        addToRemoveQueue(toastId);
+      } else {
+        state.toasts.forEach((toast) => {
+          addToRemoveQueue(toast.id);
+        });
+      }
+
+      return {
+        ...state,
+        toasts: state.toasts.map((t) =>
+          t.id === toastId || toastId === undefined
+            ? {
+                ...t,
+                open: false,
+              }
+            : t
+        ),
+      };
+    }
+    case "REMOVE_TOAST":
+      if (action.toastId === undefined) {
+        return {
+          ...state,
+          toasts: [],
+        };
+      }
+      return {
+        ...state,
+        toasts: state.toasts.filter((t) => t.id !== action.toastId),
+      };
+  }
+};
+
+const listeners: Array<(state: State) => void> = [];
+
+let memoryState: State = { toasts: [] };
+
+function dispatch(action: Action) {
+  memoryState = reducer(memoryState, action);
+  listeners.forEach((listener) => {
+    listener(memoryState);
+  });
+}
+
+type Toast = Omit<ToasterToast, "id">;
+
+function toast({ ...props }: Toast) {
+  const id = genId();
+
+  const update = (props: ToasterToast) =>
+    dispatch({
+      type: "UPDATE_TOAST",
+      toast: { ...props, id },
+    });
+  const dismiss = () => dispatch({ type: "DISMISS_TOAST", toastId: id });
+
+  dispatch({
+    type: "ADD_TOAST",
+    toast: {
+      ...props,
+      id,
+      open: true,
+      onOpenChange: (open) => {
+        if (!open) dismiss();
+      },
+    },
+  });
+
+  return {
+    id: id,
+    dismiss,
+    update,
+  };
+}
+
+function useToast() {
+  const [state, setState] = React.useState<State>(memoryState);
+
+  React.useEffect(() => {
+    listeners.push(setState);
+    return () => {
+      const index = listeners.indexOf(setState);
+      if (index > -1) {
+        listeners.splice(index, 1);
+      }
+    };
+  }, [state]);
+
+  return {
+    ...state,
+    toast,
+    dismiss: (toastId?: string) => dispatch({ type: "DISMISS_TOAST", toastId }),
+  };
+}
+
+export { toast, useToast };
+</file>
+
+<file path="eslint.config.mjs">
+import nextPlugin from "@next/eslint-plugin-next";
+import reactPlugin from "eslint-plugin-react";
+import hooksPlugin from "eslint-plugin-react-hooks";
+
+export default [
+  {
+    plugins: {
+      "@next/next": nextPlugin,
+      react: reactPlugin,
+      "react-hooks": hooksPlugin,
+    },
+    rules: {
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
+      ...reactPlugin.configs.recommended.rules,
+      ...hooksPlugin.configs.recommended.rules,
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+    },
+    settings: { react: { version: "detect" } },
+  },
+  { ignores: [".next/*", "node_modules/*"] },
+];
+</file>
+
+<file path="hooks/use-lock-body.ts">
+import * as React from "react";
+
+// @see https://usehooks.com/useLockBodyScroll.
+export function useLockBody() {
+  React.useLayoutEffect((): (() => void) => {
+    const originalStyle: string = window.getComputedStyle(
+      document.body
+    ).overflow;
+    document.body.style.overflow = "hidden";
+    return () => (document.body.style.overflow = originalStyle);
+  }, []);
+}
+</file>
+
+<file path="lib/utils.ts">
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
+export function formatDate(input: string | number): string {
+  const date = new Date(input);
+  return date.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+export function formatDateFromObj(input: Date): string {
+  const date = new Date(input);
+  return date.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+</file>
+
+<file path="postcss.config.js">
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+</file>
+
+<file path="providers/animation-provider.tsx">
+"use client";
+
+import { ReactNode } from "react";
+
+interface AnimationProviderProps {
+  children: ReactNode;
+}
+
+export const AnimationProvider = ({ children }: AnimationProviderProps) => {
+  return <>{children}</>;
+};
+</file>
+
+<file path="public/robots.txt">
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nbarkiya.xyz/sitemap.xml
+</file>
+
+<file path=".github/workflows/nextjs.yml">
+# Sample workflow for building and deploying a Next.js site to GitHub Pages
+#
+# To get started with Next.js see: https://nextjs.org/docs/getting-started
+#
+name: Deploy Next.js site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            echo "runner=yarn" >> $GITHUB_OUTPUT
+            exit 0
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            echo "Unable to determine package manager"
+            exit 1
+          fi
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Automatically inject basePath in your Next.js configuration file and disable
+          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+          static_site_generator: next
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      
+      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env:
+          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          GITHUB_PAGES: true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+</file>
+
+<file path=".gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+</file>
+
+<file path="app/(root)/projects/page.tsx">
+import { Metadata } from "next";
+
+import PageContainer from "@/components/common/page-container";
+import ProjectCard from "@/components/projects/project-card";
+import { ResponsiveTabs } from "@/components/ui/responsive-tabs";
+import { pagesConfig } from "@/config/pages";
+import { Projects } from "@/config/projects";
+
+export const metadata: Metadata = {
+  title: pagesConfig.projects.metadata.title,
+  description: pagesConfig.projects.metadata.description,
+};
+
+const renderContent = (tabVal: string) => {
+  let projectArr = Projects;
+  if (tabVal === "Robotics") {
+    projectArr = projectArr.filter((val) => val.type === "Robotics");
+  } else if (tabVal === "Cybersecurity") {
+    projectArr = projectArr.filter((val) => val.type === "Cybersecurity");
+  } else if (tabVal === "Technical Writing") {
+    projectArr = projectArr.filter((val) => val.type === "Technical Writing");
+  }
+  
+  return (
+    <div className="mx-auto my-4 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 static">
+      {projectArr.map((project) => (
+        <ProjectCard project={project} key={project.id} />
+      ))}
+    </div>
+  );
+};
+
+export default function ProjectsPage() {
+  const tabItems = [
+    {
+      value: "all",
+      label: "All",
+      content: renderContent("all"),
+    },
+    {
+      value: "Robotics",
+      label: "Robotics",
+      content: renderContent("Robotics"),
+    },
+    {
+      value: "Cybersecurity",
+      label: "Cybersecurity",
+      content: renderContent("Cybersecurity"),
+    },
+    {
+      value: "Technical Writing",
+      label: "Technical Writing",
+      content: renderContent("Technical Writing"),
+    },
+  ];
+
+  return (
+    <PageContainer
+      title={pagesConfig.projects.title}
+      description={pagesConfig.projects.description}
+    >
+      <ResponsiveTabs items={tabItems} defaultValue="all" />
+    </PageContainer>
+  );
+}
+</file>
+
+<file path="components/common/analytics.tsx">
+"use client";
+
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
+
+export function Analytics() {
+  return <VercelAnalytics />;
+}
+</file>
+
+<file path="components/common/animated-page-transition.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
+
+interface AnimatedPageTransitionProps {
+  children: ReactNode;
+}
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut" as const,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -20,
+    transition: {
+      duration: 0.3,
+      ease: "easeInOut" as const,
+    },
+  },
+};
+
+export const AnimatedPageTransition = ({
+  children,
+}: AnimatedPageTransitionProps) => {
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={pageVariants}
+      className="w-full"
+    >
+      {children}
+    </motion.div>
+  );
+};
+</file>
+
+<file path="components/common/animated-section.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
+
+interface AnimatedSectionProps {
+  children: ReactNode;
+  className?: string;
+  delay?: number;
+  direction?: "up" | "down" | "left" | "right";
+  id?: string;
+}
+
+export const AnimatedSection = ({
+  children,
+  className = "",
+  delay = 0,
+  direction = "up",
+  id,
+}: AnimatedSectionProps) => {
+  const directionOffset = {
+    up: { y: 50 },
+    down: { y: -50 },
+    left: { x: 50 },
+    right: { x: -50 },
+  };
+
+  const initialOffset = directionOffset[direction];
+
+  return (
+    <motion.div
+      id={id}
+      className={className}
+      initial={{ opacity: 0, ...initialOffset }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        y: 0,
+        transition: {
+          duration: 0.8,
+          delay,
+          ease: "easeOut" as const,
+        },
+      }}
+      viewport={{ once: true, margin: "-100px" }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+</file>
+
+<file path="components/common/animated-text.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
+
+interface AnimatedTextProps {
+  children: ReactNode;
+  delay?: number;
+  className?: string;
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span" | "div";
+}
+
+const textVariants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: (delay: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay,
+      duration: 0.6,
+      ease: "easeOut" as const,
+    },
+  }),
+};
+
+export const AnimatedText = ({
+  children,
+  delay = 0,
+  className = "",
+  as = "div",
+}: AnimatedTextProps) => {
+  const Component = motion[as];
+
+  return (
+    <Component
+      initial="hidden"
+      animate="visible"
+      custom={delay}
+      variants={textVariants}
+      className={className}
+    >
+      {children}
+    </Component>
+  );
+};
+</file>
+
+<file path="components/common/client-page-wrapper.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
+
+interface ClientPageWrapperProps {
+  children: ReactNode;
+}
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut" as const,
+    },
+  },
+};
+
+export const ClientPageWrapper = ({ children }: ClientPageWrapperProps) => {
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      variants={pageVariants}
+      className="w-full"
+    >
+      {children}
+    </motion.div>
+  );
+};
+</file>
+
+<file path="components/common/page-header.tsx">
+interface PageHeaderProps {
+  title: string;
+  description: string;
+}
+
+export default function PageHeader({ title, description }: PageHeaderProps) {
+  return (
+    <>
+      <div className="flex flex-col mt-5 items-start gap-4 md:flex-row md:justify-between md:gap-8">
+        <div className="flex-1 space-y-4">
+          <h1 className="inline-block font-heading text-4xl tracking-tight lg:text-5xl capitalize ">
+            {title}
+          </h1>
+          <p className="text-lg text-muted-foreground">{description}</p>
+        </div>
+      </div>
+      <hr className="my-6" />
+    </>
+  );
+}
+</file>
+
+<file path="components/common/site-footer.tsx">
+import Link from "next/link";
+import * as React from "react";
+
+import { buttonVariants } from "@/components/ui/button";
+import CustomTooltip from "@/components/ui/custom-tooltip";
+import { SocialLinks } from "@/config/socials";
+import { cn } from "@/lib/utils";
+
+export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
+  return (
+    <footer className={cn(className)}>
+      <div className="container flex items-center justify-center gap-8 mt-10 py-10 md:h-24">
+        {SocialLinks.map((item, ind) => (
+          <CustomTooltip icon={item.icon} text={item.username} key={ind}>
+            <Link
+              href={item.link}
+              target="_blank"
+              className={cn(
+                buttonVariants({
+                  variant: "ghost",
+                  size: "sm",
+                }),
+                "h-10 w-10 p-2"
+              )}
+            >
+              <item.icon className="h-5 w-5" />
+            </Link>
+          </CustomTooltip>
+        ))}
+      </div>
+    </footer>
+  );
+}
+</file>
+
+<file path="components/contact/github-redirect-card.tsx">
+"use client";
+
+import { buttonVariants } from "@/components/ui/button";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import { ExternalLink, Github, Heart } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
+
+export default function GithubRedirectCard() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <Card
+      className="w-full h-fit max-w-sm overflow-hiddenshadow-lg transition-all duration-300 ease-in-out transform hover:scale-102 mt-5"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <CardContent className="p-8 flex flex-col items-center text-center">
+        <div className="mb-6">
+          <Heart
+            className={`w-12 h-12 transition-colors duration-300 ease-out ${
+              isHovered ? "text-red-500" : "text-muted-foreground"
+            }`}
+          />
+        </div>
+        <h2 className="font-heading text-xl tracking-tight lg:text-3xl duration-300">
+          Like this template?
+        </h2>
+        <p className="mt-2 mb-10 font-heading text-lg text-muted-foreground">
+          It&#39;s open source. Explore and contribute on GitHub.
+        </p>
+        <Github className="w-10 h-10 text-muted-foreground mb-5" />
+      </CardContent>
+      <CardFooter className="px-8 pb-8 pt-0">
+        <Link
+          href={""}
+          target="_blank"
+          className={cn(
+            buttonVariants({ variant: "outline" }),
+            "w-full bg-transparent border-2 transition-all duration-300 py-6"
+          )}
+        >
+          <span className="mr-2">Source Code</span>
+          <ExternalLink className="w-5 h-5" />
+        </Link>
+      </CardFooter>
+      <div
+        className={`h-1 bg-gradient-to-r from-red-500 to-red-500 transition-all duration-300 ease-out ${
+          isHovered ? "opacity-100" : "opacity-0"
+        }`}
+      ></div>
+    </Card>
+  );
+}
+</file>
+
+<file path="components/modals/custom-modal.tsx">
+"use client";
+
+import { Modal } from "@/components/ui/modal";
+import { useModalStore } from "@/hooks/use-modal-store";
+
+export const CustomModal = () => {
+  const modalStore = useModalStore();
+
+  return (
+    <Modal
+      title=""
+      description=""
+      isOpen={modalStore.isOpen}
+      onClose={modalStore.onClose}
+    >
+      <div className="flex flex-col justify-center items-center gap-3 md:flex-row pb-2">
+        <modalStore.icon />
+        <div className="flex flex-col justify-center items-center md:items-start">
+          <h1 className="font-heading text-2xl sm:text-3xl md:text-3xl lg:text-4xl">
+            {modalStore.title}
+          </h1>
+          <p className="text-center mt-1 md:text-left">
+            {modalStore.description}
+          </p>
+        </div>
+      </div>
+    </Modal>
+  );
+};
+</file>
+
+<file path="components/projects/project-card.tsx">
+import Image from "next/image";
+import Link from "next/link";
+
+import { Icons } from "@/components/common/icons";
+import { Button } from "@/components/ui/button";
+import ChipContainer from "@/components/ui/chip-container";
+import { ProjectInterface } from "@/config/projects";
+
+interface ProjectCardProps {
+  project: ProjectInterface;
+}
+
+export default function ProjectCard({ project }: ProjectCardProps) {
+  return (
+    <div className="relative p-6 max-w-sm bg-background border border-border rounded-lg">
+      <div className="relative w-full h-[200px]">
+        <Image
+          className="rounded-lg border border-border object-cover"
+          src={project.companyLogoImg}
+          alt="img"
+          fill
+        />
+      </div>
+      <div className="pt-5 space-y-3">
+        <h5 className="text-2xl font-bold tracking-tight text-foreground">
+          {project.companyName}
+        </h5>
+        <p className="line-clamp-3 font-normal text-muted-foreground">
+          {project.shortDescription}
+        </p>
+        <div className="flex gap-2 flex-wrap">
+          <ChipContainer textArr={project.category} />
+        </div>
+        <Link href={`/projects/${project.id}`}>
+          <Button variant={"default"} className="mt-2">
+            Read more
+            <Icons.chevronRight className="w-4 ml-1" />
+          </Button>
+        </Link>
+      </div>
+      <div className="absolute bottom-4 right-4 p-3 rounded-full bg-background border border-border">
+        {project.type === "Robotics" ? (
+          <Icons.userFill className="h-4 w-4" />
+        ) : (
+          <Icons.work className="h-4 w-4" />
+        )}
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="components/skills/skills-card.tsx">
+import Rating from "@/components/skills/rating";
+import { skillsInterface } from "@/config/skills";
+
+interface SkillsCardProps {
+  skills: skillsInterface[];
+}
+
+export default function SkillsCard({ skills }: SkillsCardProps) {
+  return (
+    <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {skills.map((skill, id) => (
+        <div
+          key={id}
+          className="relative overflow-hidden rounded-lg border bg-background p-2"
+        >
+          <div className="flex h-[230px] flex-col justify-between rounded-md p-6 sm:h-[230px]">
+            <skill.icon size={50} />
+            <div className="space-y-2">
+              <h3 className="font-bold">{skill.name}</h3>
+              <p className="text-sm text-muted-foreground">
+                {skill.description}
+              </p>
+              <Rating stars={skill.rating} />
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+</file>
+
+<file path="components/ui/chip-container.tsx">
+import Chip from "./chip";
+
+interface ChipContainerProps {
+  textArr: string[];
+}
+
+export default function ChipContainer({ textArr }: ChipContainerProps) {
+  return (
+    <div className="flex my-3 gap-2 flex-wrap">
+      {textArr.map((it, ind) => (
+        <Chip key={ind} content={it} />
+      ))}
+    </div>
+  );
+}
+</file>
+
+<file path="components/ui/chip.tsx">
+interface ChipProps {
+  content: string;
+}
+
+export default function Chip({ content }: ChipProps) {
+  return (
+    <div className="center relative inline-block select-none whitespace-nowrap rounded-md py-2 px-3 align-baseline font-sans text-xs font-bold leading-none text-primary border border-border bg-background">
+      {content}
+    </div>
+  );
+}
+</file>
+
+<file path="components/ui/form.tsx">
+import * as LabelPrimitive from "@radix-ui/react-label";
+import { Slot } from "@radix-ui/react-slot";
+import * as React from "react";
+import {
+  Controller,
+  ControllerProps,
+  FieldPath,
+  FieldValues,
+  FormProvider,
+  useFormContext,
+} from "react-hook-form";
+
+import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
+
+const Form = FormProvider;
+
+type FormFieldContextValue<
+  TFieldValues extends FieldValues = FieldValues,
+  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
+> = {
+  name: TName;
+};
+
+const FormFieldContext = React.createContext<FormFieldContextValue>(
+  {} as FormFieldContextValue
+);
+
+const FormField = <
+  TFieldValues extends FieldValues = FieldValues,
+  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
+>({
+  ...props
+}: ControllerProps<TFieldValues, TName>) => {
+  return (
+    <FormFieldContext.Provider value={{ name: props.name }}>
+      <Controller {...props} />
+    </FormFieldContext.Provider>
+  );
+};
+
+const useFormField = () => {
+  const fieldContext = React.useContext(FormFieldContext);
+  const itemContext = React.useContext(FormItemContext);
+  const { getFieldState, formState } = useFormContext();
+
+  const fieldState = getFieldState(fieldContext.name, formState);
+
+  if (!fieldContext) {
+    throw new Error("useFormField should be used within <FormField>");
+  }
+
+  const { id } = itemContext;
+
+  return {
+    id,
+    name: fieldContext.name,
+    formItemId: `${id}-form-item`,
+    formDescriptionId: `${id}-form-item-description`,
+    formMessageId: `${id}-form-item-message`,
+    ...fieldState,
+  };
+};
+
+type FormItemContextValue = {
+  id: string;
+};
+
+const FormItemContext = React.createContext<FormItemContextValue>(
+  {} as FormItemContextValue
+);
+
+const FormItem = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => {
+  const id = React.useId();
+
+  return (
+    <FormItemContext.Provider value={{ id }}>
+      <div ref={ref} className={cn("space-y-2", className)} {...props} />
+    </FormItemContext.Provider>
+  );
+});
+FormItem.displayName = "FormItem";
+
+const FormLabel = React.forwardRef<
+  React.ElementRef<typeof LabelPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root>
+>(({ className, ...props }, ref) => {
+  const { error, formItemId } = useFormField();
+
+  return (
+    <Label
+      ref={ref}
+      className={cn(error && "text-destructive", className)}
+      htmlFor={formItemId}
+      {...props}
+    />
+  );
+});
+FormLabel.displayName = "FormLabel";
+
+const FormControl = React.forwardRef<
+  React.ElementRef<typeof Slot>,
+  React.ComponentPropsWithoutRef<typeof Slot>
+>(({ ...props }, ref) => {
+  const { error, formItemId, formDescriptionId, formMessageId } =
+    useFormField();
+
+  return (
+    <Slot
+      ref={ref}
+      id={formItemId}
+      aria-describedby={
+        !error
+          ? `${formDescriptionId}`
+          : `${formDescriptionId} ${formMessageId}`
+      }
+      aria-invalid={!!error}
+      {...props}
+    />
+  );
+});
+FormControl.displayName = "FormControl";
+
+const FormDescription = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
+>(({ className, ...props }, ref) => {
+  const { formDescriptionId } = useFormField();
+
+  return (
+    <p
+      ref={ref}
+      id={formDescriptionId}
+      className={cn("text-sm text-muted-foreground", className)}
+      {...props}
+    />
+  );
+});
+FormDescription.displayName = "FormDescription";
+
+const FormMessage = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
+>(({ className, children, ...props }, ref) => {
+  const { error, formMessageId } = useFormField();
+  const body = error ? String(error?.message) : children;
+
+  if (!body) {
+    return null;
+  }
+
+  return (
+    <p
+      ref={ref}
+      id={formMessageId}
+      className={cn("text-sm font-medium text-destructive", className)}
+      {...props}
+    >
+      {body}
+    </p>
+  );
+});
+FormMessage.displayName = "FormMessage";
+
+export {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  useFormField,
+};
+</file>
+
+<file path="components/ui/input.tsx">
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ className, type, ...props }, ref) => {
+    return (
+      <input
+        type={type}
+        className={cn(
+          "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+          className
+        )}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
+Input.displayName = "Input";
+
+export { Input };
+</file>
+
+<file path="components/ui/label.tsx">
+"use client";
+
+import * as LabelPrimitive from "@radix-ui/react-label";
+import { cva, type VariantProps } from "class-variance-authority";
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const labelVariants = cva(
+  "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+);
+
+const Label = React.forwardRef<
+  React.ElementRef<typeof LabelPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root> &
+    VariantProps<typeof labelVariants>
+>(({ className, ...props }, ref) => (
+  <LabelPrimitive.Root
+    ref={ref}
+    className={cn(labelVariants(), className)}
+    {...props}
+  />
+));
+Label.displayName = LabelPrimitive.Root.displayName;
+
+export { Label };
+</file>
+
+<file path="components/ui/modal.tsx">
+"use client";
+
+import React from "react";
+
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+
+interface ModalProps {
+  title: string;
+  description: string;
+  isOpen: boolean;
+  onClose: () => void;
+  children?: React.ReactNode;
+}
+
+export const Modal: React.FC<ModalProps> = (props) => {
+  const onChange = (open: boolean) => {
+    if (!open) {
+      props.onClose();
+    }
+  };
+
+  return (
+    <Dialog open={props.isOpen} onOpenChange={onChange}>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>{props.title}</DialogTitle>
+          <DialogDescription>{props.description}</DialogDescription>
+        </DialogHeader>
+        <div>{props.children}</div>
+      </DialogContent>
+    </Dialog>
+  );
+};
+</file>
+
+<file path="components/ui/responsive-tabs.tsx">
+"use client";
+
+import { ChevronDown } from "lucide-react";
+import * as React from "react";
+
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { cn } from "@/lib/utils";
+
+interface TabItem {
+  value: string;
+  label: string;
+  content: React.ReactNode;
+}
+
+interface ResponsiveTabsProps {
+  items: TabItem[];
+  defaultValue?: string;
+  className?: string;
+}
+
+export function ResponsiveTabs({
+  items,
+  defaultValue,
+  className,
+}: ResponsiveTabsProps) {
+  const [activeTab, setActiveTab] = React.useState(
+    defaultValue || items[0]?.value
+  );
+  const activeItem = items.find((item) => item.value === activeTab);
+
+  return (
+    <div className={cn("w-full", className)}>
+      {/* Mobile: Dropdown */}
+      <div className="md:hidden mb-4">
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" className="w-full justify-between">
+              {activeItem?.label || "Select option"}
+              <ChevronDown className="h-4 w-4" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-full min-w-[200px]">
+            {items.map((item) => (
+              <DropdownMenuItem
+                key={item.value}
+                onClick={() => setActiveTab(item.value)}
+                className={cn(
+                  "cursor-pointer",
+                  activeTab === item.value && "bg-accent"
+                )}
+              >
+                {item.label}
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+
+      {/* Desktop: Tabs */}
+      <div className="hidden md:block">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+          <TabsList className="grid w-full grid-cols-4">
+            {items.map((item) => (
+              <TabsTrigger key={item.value} value={item.value}>
+                {item.label}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+          {items.map((item) => (
+            <TabsContent key={item.value} value={item.value}>
+              {item.content}
+            </TabsContent>
+          ))}
+        </Tabs>
+      </div>
+
+      {/* Mobile: Content */}
+      <div className="md:hidden">{activeItem?.content}</div>
+    </div>
+  );
+}
+</file>
+
+<file path="components/ui/tabs.tsx">
+"use client";
+
+import * as TabsPrimitive from "@radix-ui/react-tabs";
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const Tabs = TabsPrimitive.Root;
+
+const TabsList = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.List>,
+  React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>
+>(({ className, ...props }, ref) => (
+  <TabsPrimitive.List
+    ref={ref}
+    className={cn(
+      "inline-flex h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground",
+      className
+    )}
+    {...props}
+  />
+));
+TabsList.displayName = TabsPrimitive.List.displayName;
+
+const TabsTrigger = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>
+>(({ className, ...props }, ref) => (
+  <TabsPrimitive.Trigger
+    ref={ref}
+    className={cn(
+      "inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm",
+      className
+    )}
+    {...props}
+  />
+));
+TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
+
+const TabsContent = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
+>(({ className, ...props }, ref) => (
+  <TabsPrimitive.Content
+    ref={ref}
+    className={cn(
+      "mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+      className
+    )}
+    {...props}
+  />
+));
+TabsContent.displayName = TabsPrimitive.Content.displayName;
+
+export { Tabs, TabsContent, TabsList, TabsTrigger };
+</file>
+
+<file path="components/ui/textarea.tsx">
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+export interface TextareaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
+
+const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
+  ({ className, ...props }, ref) => {
+    return (
+      <textarea
+        className={cn(
+          "flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+          className
+        )}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
+Textarea.displayName = "Textarea";
+
+export { Textarea };
+</file>
+
+<file path="components/ui/tooltip.tsx">
+"use client";
+
+import * as TooltipPrimitive from "@radix-ui/react-tooltip";
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const TooltipProvider = TooltipPrimitive.Provider;
+
+const Tooltip = TooltipPrimitive.Root;
+
+const TooltipTrigger = TooltipPrimitive.Trigger;
+
+const TooltipContent = React.forwardRef<
+  React.ElementRef<typeof TooltipPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content>
+>(({ className, sideOffset = 4, ...props }, ref) => (
+  <TooltipPrimitive.Content
+    ref={ref}
+    sideOffset={sideOffset}
+    className={cn(
+      "z-50 overflow-hidden rounded-md border bg-popover px-3 py-1.5 text-sm text-popover-foreground shadow-md animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+      className
+    )}
+    {...props}
+  />
+));
+TooltipContent.displayName = TooltipPrimitive.Content.displayName;
+
+export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger };
+</file>
+
+<file path="information/overview.md">
+# Portfolio Website Navigation Overview
+
+This document outlines the navigation structure of the portfolio website [https://nbarkiya.xyz/](https://nbarkiya.xyz/), detailing each page and its primary sections to facilitate understanding and interaction.
+
+---
+
+## Main Navigation Menu
+
+The website's main navigation menu is accessible from all pages and includes the following links:
+
+1. **Home**: [https://nbarkiya.xyz/](https://nbarkiya.xyz/)
+2. **Skills**: [https://nbarkiya.xyz/skills](https://nbarkiya.xyz/skills)
+3. **Projects**: [https://nbarkiya.xyz/projects](https://nbarkiya.xyz/projects)
+4. **Experience**: [https://nbarkiya.xyz/experience](https://nbarkiya.xyz/experience)
+5. **Contributions**: [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
+6. **Contact**: [https://nbarkiya.xyz/contact](https://nbarkiya.xyz/contact)
+
+---
+
+## Detailed Page Structure
+
+### 1. Home
+
+**URL:** [https://nbarkiya.xyz/](https://nbarkiya.xyz/)
+
+**Sections:**
+
+- **Introduction**: Presents the individual's name and role (e.g., "Full Stack Developer").
+- **Skills Overview**: Highlights key skills with a prompt to view all skills.
+- **Projects Highlights**: Summarizes notable technical projects with links to detailed descriptions.
+- **Experience Highlights**: Summarizes professional work experience with links to detailed descriptions.
+- **Contributions Summary**: Lists recent open-source contributions with links for more information.
+
+### 2. Skills
+
+**URL:** [https://nbarkiya.xyz/skills](https://nbarkiya.xyz/skills)
+
+**Sections:**
+
+- **Technical Skills**: Enumerates various technologies and tools, each accompanied by a brief description.
+
+### 3. Projects
+
+**URL:** [https://nbarkiya.xyz/projects](https://nbarkiya.xyz/projects)
+
+**Sections:**
+
+- **Technical Projects**: Details technical projects with descriptions, technologies used, and links to read more.
+
+### 4. Experience
+
+**URL:** [https://nbarkiya.xyz/experience](https://nbarkiya.xyz/experience)
+
+**Sections:**
+
+- **Professional Experience**: Details work experience with company information, roles, and achievements.
+
+### 5. Contributions
+
+**URL:** [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
+
+**Sections:**
+
+- **Open-Source Contributions**: Lists contributions with descriptions and links to the respective repositories.
+
+### 6. Contact
+
+**URL:** [https://nbarkiya.xyz/contact](https://nbarkiya.xyz/contact)
+
+**Sections:**
+
+- **Contact Form**: Fields for name, email, message, and optional social links.
+- **GitHub Link**: Provides a link to the source code of the website's template.
+
+---
+
+## Additional Features
+
+- **Theme Toggle**: Allows users to switch between light and dark themes.
+- **Responsive Design**: Ensures optimal viewing across various devices.
+</file>
+
+<file path="LICENSE">
+MIT License
+
+Copyright (c) 2023-2024  Iqma
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</file>
+
+<file path="tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+</file>
+
+<file path="app/sitemap.ts">
+import { MetadataRoute } from "next";
+import { siteConfig } from "@/config/site";
+
+// Add this line to ensure the sitemap is generated as a static file
+export const dynamic = "force-static";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = siteConfig.url;
+
+  // Main pages
+  const routes = [
+    {
+      url: `${baseUrl}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/skills`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/projects`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/experience`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/contributions`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/resume`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+  ];
+
+  return routes;
+}
+</file>
+
+<file path="components/common/mode-toggle.tsx">
+"use client";
+
+import { useTheme } from "next-themes";
+
+import { Icons } from "@/components/common/icons";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+export function ModeToggle() {
+  const { setTheme, theme } = useTheme();
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="sm" className="h-8 w-8 px-0">
+          <Icons.sun className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 cyberpunk:scale-0 retro:scale-0 paper:scale-0 aurora:scale-0 synthwave:scale-0" />
+          <Icons.moon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 cyberpunk:scale-0 retro:scale-0 paper:scale-0 aurora:scale-0 synthwave:scale-0" />
+          <Icons.retro className="absolute rotate-90 scale-0 transition-all retro:rotate-0 retro:scale-100" />
+          <Icons.cyberpunk className="absolute rotate-90 scale-0 transition-all cyberpunk:rotate-0 cyberpunk:scale-100" />
+          <Icons.paper className="absolute rotate-90 scale-0 transition-all paper:rotate-0 paper:scale-100" />
+          <Icons.aurora className="absolute rotate-90 scale-0 transition-all aurora:rotate-0 aurora:scale-100" />
+          <Icons.synthwave className="absolute rotate-90 scale-0 transition-all synthwave:rotate-0 synthwave:scale-100" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => setTheme("light")}>
+          <Icons.sun className="mr-2 h-4 w-4" />
+          <span>Light</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("dark")}>
+          <Icons.moon className="mr-2 h-4 w-4" />
+          <span>Dark</span>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem onClick={() => setTheme("retro")}>
+          <Icons.retro className="mr-2 h-4 w-4" />
+          <span>Retro</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("cyberpunk")}>
+          <Icons.cyberpunk className="mr-2 h-4 w-4" />
+          <span>Cyberpunk</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("paper")}>
+          <Icons.paper className="mr-2 h-4 w-4" />
+          <span>Paper</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("aurora")}>
+          <Icons.aurora className="mr-2 h-4 w-4" />
+          <span>Aurora</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("synthwave")}>
+          <Icons.synthwave className="mr-2 h-4 w-4" />
+          <span>Synthwave</span>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem onClick={() => setTheme("system")}>
+          <Icons.laptop className="mr-2 h-4 w-4" />
+          <span>System</span>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
+</file>
+
+<file path="components/common/page-container.tsx">
+import React from "react";
+import { ClientPageWrapper } from "./client-page-wrapper";
+import PageHeader from "./page-header";
+
+interface PageContainerProps {
+  title: string;
+  description: string;
+  children: React.ReactNode;
+}
+
+export default function PageContainer({
+  title,
+  description,
+  children,
+}: PageContainerProps) {
+  return (
+    <ClientPageWrapper>
+      <div>
+        <PageHeader title={title} description={description} />
+        <div className="mx-6">{children}</div>
+      </div>
+    </ClientPageWrapper>
+  );
+}
+</file>
+
+<file path="components/common/theme-provider.tsx">
+"use client";
+
+import { ThemeProvider as NextThemesProvider, type ThemeProviderProps } from "next-themes";
+
+export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+}
+</file>
+
+<file path="components/contributions/contribution-card.tsx">
+import Link from "next/link";
+
+import { Icons } from "@/components/common/icons";
+import { contributionsInterface } from "@/config/contributions";
+
+interface ContributionCardProps {
+  contributions: contributionsInterface[];
+}
+
+export default function ContributionCard({
+  contributions,
+}: ContributionCardProps) {
+  return (
+    <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 static">
+      {contributions.map((contribution, id) => (
+        <Link href={contribution.link} target="_blank" key={id}>
+          <div className="relative rounded-lg border bg-background p-2 hover:bg-accent hover:text-accent-foreground">
+            <Icons.externalLink
+              size={35}
+              className="absolute bottom-3 right-3 border bg-background rounded-full p-2 cursor-pointer text-muted-foreground "
+            />
+            <div className="flex h-[170px] flex-col justify-between rounded-md p-6 sm:h-[170px]">
+              <div className="flex flex-row justify-between">
+                <h3 className="font-bold flex space-x-2 items-center">
+                  <Icons.gitRepoIcon size={20} />
+                  <span>{contribution.repo}</span>
+                </h3>
+                <Icons.gitBranch size={20} />
+              </div>
+              <div className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  {contribution.contibutionDescription}
+                </p>
+                <p className="text-sm text-muted-foreground flex space-x-2 items-center">
+                  <Icons.gitOrgBuilding size={15} />
+                  <span>{contribution.repoOwner}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
+}
+</file>
+
+<file path="components/skills/rating.tsx">
+interface ratingProps {
+  stars: number;
+}
+
+export default function Rating({ stars }: ratingProps) {
+  const rating = new Array<number>(5).fill(0);
+  for (let i = 0; i < stars; i++) {
+    rating[i] = 1;
+  }
+
+  return (
+    <div className="flex items-center space-x-1">
+      {rating.map((val, ind) =>
+        val === 1 ? (
+          <svg
+            className="w-4 h-4 text-yellow-300"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 22 20"
+            key={ind}
+          >
+            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+          </svg>
+        ) : (
+          <svg
+            className="w-4 h-4 text-muted"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 22 20"
+            key={ind}
+          >
+            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+          </svg>
+        )
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="components/ui/accordion.tsx">
+"use client";
+
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import { ChevronDown } from "lucide-react";
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const Accordion = AccordionPrimitive.Root;
+
+const AccordionItem = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
+>(({ className, ...props }, ref) => (
+  <AccordionPrimitive.Item
+    ref={ref}
+    className={cn("border px-4 rounded", className)}
+    {...props}
+  />
+));
+AccordionItem.displayName = "AccordionItem";
+
+const AccordionTrigger = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Header className="flex">
+    <AccordionPrimitive.Trigger
+      ref={ref}
+      className={cn(
+        "flex flex-1 items-center justify-between py-4 font-medium transition-all [&[data-state=open]>svg]:rotate-180 md:text-sm",
+        className
+      )}
+      {...props}
+    >
+      {children}
+      <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+    </AccordionPrimitive.Trigger>
+  </AccordionPrimitive.Header>
+));
+AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
+
+const AccordionContent = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Content
+    ref={ref}
+    className={cn(
+      "overflow-hidden text-xs transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down md:text-sm",
+      className
+    )}
+    {...props}
+  >
+    <div className="flex pb-4 pt-0 items-center justify-center md:justify-start">
+      {children}
+    </div>
+  </AccordionPrimitive.Content>
+));
+AccordionContent.displayName = AccordionPrimitive.Content.displayName;
+
+export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };
+</file>
+
+<file path="components/ui/custom-tooltip.tsx">
+import React from "react";
+
+import { Icons } from "@/components/common/icons";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
+interface CustomTooltipProps {
+  children: React.ReactNode;
+  text: string;
+  icon?: any;
+}
+
+export default function CustomTooltip({
+  children,
+  text,
+  icon,
+}: CustomTooltipProps) {
+  const IconComponent = icon ? icon : Icons.infoMark;
+  return (
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger asChild>{children}</TooltipTrigger>
+        <TooltipContent className="flex text-muted-foreground items-center">
+          <IconComponent className="w-4 h-4 mr-2" />
+          <span>{text}</span>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  );
+}
+</file>
+
+<file path="components/ui/dialog.tsx">
+"use client";
+
+import * as DialogPrimitive from "@radix-ui/react-dialog";
+import { X } from "lucide-react";
+import * as React from "react";
+
+import { cn } from "@/lib/utils";
+
+const Dialog = DialogPrimitive.Root;
+
+const DialogTrigger = DialogPrimitive.Trigger;
+
+const DialogPortal = (props: DialogPrimitive.DialogPortalProps) => (
+  <DialogPrimitive.Portal {...props} />
+);
+DialogPortal.displayName = DialogPrimitive.Portal.displayName;
+
+const DialogOverlay = React.forwardRef<
+  React.ElementRef<typeof DialogPrimitive.Overlay>,
+  React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
+>(({ className, ...props }, ref) => (
+  <DialogPrimitive.Overlay
+    ref={ref}
+    className={cn(
+      "fixed inset-0 z-50 bg-background/80 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
+      className
+    )}
+    {...props}
+  />
+));
+DialogOverlay.displayName = DialogPrimitive.Overlay.displayName;
+
+const DialogContent = React.forwardRef<
+  React.ElementRef<typeof DialogPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
+>(({ className, children, ...props }, ref) => (
+  <DialogPortal>
+    <DialogOverlay />
+    <DialogPrimitive.Content
+      ref={ref}
+      className={cn(
+        "fixed left-[50%] top-[50%] z-50 grid w-4/5 max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg md:w-full",
+        className
+      )}
+      {...props}
+    >
+      {children}
+      <DialogPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+        <X className="h-4 w-4" />
+        <span className="sr-only">Close</span>
+      </DialogPrimitive.Close>
+    </DialogPrimitive.Content>
+  </DialogPortal>
+));
+DialogContent.displayName = DialogPrimitive.Content.displayName;
+
+const DialogHeader = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => (
+  <div
+    className={cn(
+      "flex flex-col space-y-1.5 text-center sm:text-left",
+      className
+    )}
+    {...props}
+  />
+);
+DialogHeader.displayName = "DialogHeader";
+
+const DialogFooter = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => (
+  <div
+    className={cn(
+      "flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2",
+      className
+    )}
+    {...props}
+  />
+);
+DialogFooter.displayName = "DialogFooter";
+
+const DialogTitle = React.forwardRef<
+  React.ElementRef<typeof DialogPrimitive.Title>,
+  React.ComponentPropsWithoutRef<typeof DialogPrimitive.Title>
+>(({ className, ...props }, ref) => (
+  <DialogPrimitive.Title
+    ref={ref}
+    className={cn(
+      "text-lg font-semibold leading-none tracking-tight",
+      className
+    )}
+    {...props}
+  />
+));
+DialogTitle.displayName = DialogPrimitive.Title.displayName;
+
+const DialogDescription = React.forwardRef<
+  React.ElementRef<typeof DialogPrimitive.Description>,
+  React.ComponentPropsWithoutRef<typeof DialogPrimitive.Description>
+>(({ className, ...props }, ref) => (
+  <DialogPrimitive.Description
+    ref={ref}
+    className={cn("text-sm text-muted-foreground", className)}
+    {...props}
+  />
+));
+DialogDescription.displayName = DialogPrimitive.Description.displayName;
+
+export {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+};
+</file>
+
+<file path="config/projects.ts">
+import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
+
+interface PagesInfoInterface {
+  title: string;
+  imgArr: string[];
+  description?: string;
+}
+
+interface DescriptionDetailsInterface {
+  paragraphs: string[];
+  bullets: string[];
+}
+
+export interface ProjectInterface {
+  id: string;
+  type: ValidExpType;
+  companyName: string;
+  category: ValidCategory[];
+  shortDescription: string;
+  websiteLink?: string;
+  githubLink?: string;
+  techStack: ValidSkills[];
+  startDate: Date;
+  endDate: Date;
+  companyLogoImg: any;
+  descriptionDetails: DescriptionDetailsInterface;
+  pagesInfoArr: PagesInfoInterface[];
+}
+
+export const Projects: ProjectInterface[] = [
+  {
+    id: "Project-Surro",
+    companyName: "Project Surro",
+    type: "Robotics",
+    category: ["Robotics"],
+    shortDescription:
+      "Developed a robot for autonomous CS surgeries using reinforcement learning ",
+    websiteLink: "",
+    githubLink: "",
+    techStack: ["ROS2", "Gazebo", "Linux", "Fusion360", "C/C++"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/projects/Surro/Arm overview 2.png", //personal or professional icon. change accordingly later
+    pagesInfoArr: [
+      {
+        title: "Design",
+        description: "Each component was designed and assembled using Fusion360",
+        imgArr: [
+          // "/projects/hindi-keyboard/web_1.png"
+        ],
+      },
+      {
+        title: "Training",
+        description:
+          "Training was done in the Mujoco simulator using videos from various caesarian section surgeries",
+        imgArr: [
+          // "/projects/hindi-keyboard/web_2.png", //put training pictures from mujoco
+          // "/projects/hindi-keyboard/web_3.png",
+        ],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Developed a robot that can autonomously perform surgeries without human input",
+        "Robot can also perform surgical assistive tasks like equipment handling ?",
+      ],
+      bullets: [
+        "Designed components in fusion",
+        "gathered various videos of surgeries to train the robot",
+        "Reinforcement learning done using mujoco for precise pgysics simulation",
+      ],
+    },
+  },
+  {
+    id: "3D-designs",
+    companyName: "3D Robot Designs",
+    type: "Robotics",
+    category: ["3D Modeling", "Robotics"],
+    shortDescription:
+      "Designed functional 3-Dimensionnal models in Fusion360 / Solidworks",
+    githubLink: "https://github.com/",
+    techStack: [
+      "Fusion360",
+      "Solidworks",
+    ],
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2025-12-01"),
+    companyLogoImg: "/projects/3D Designs/Semi humanoid.png",
+    pagesInfoArr: [
+      {
+        title: "3D Robot Designs",
+        description:
+          "Designed functional 3-Dimensionnal models in Fusion360 / Solidworks",
+        imgArr: ["/projects/3D Designs/Arm overview 2.png", "/projects/3D Designs/All arm views.png", "/projects/3D Designs/Semi humanoid.png"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "I created multiple 3D designs in fusion",
+        "Focused on not only aesthetics but also funcctionality and printing optimisation",
+      ],
+      bullets: [
+        "Created functional 3d designed.",
+        "Assembled design component by component and created animations for it",
+      ],
+    },
+  },
+  {
+    id: "electronics-projects",
+    companyName: "Electronics",
+    type: "Robotics",
+    category: ["Robotics", "Electronics"],
+    shortDescription:
+      "Electronics projects designed in simulation software then physically implementes",
+    techStack: ["Arduino", "C/C++", "Python", "Tinkercad"],
+    startDate: new Date("2024-04-01"),
+    endDate: new Date("2024-10-01"),
+    companyLogoImg: "/logo.png", //personal or professional icon. change accordingly later
+    pagesInfoArr: [
+      {
+        title: "Smart walking stick",
+        description:
+          "Upgraded a walking stick with sensors for obstacle and pit detection and a subsequent alert system for more efficient environmental analysis for blind individuals",
+        imgArr: ["/projects/Electronics/"],
+      },
+      {
+        title: "Femmetech",
+        description:
+          "Led a group of secondary school students through electronics fundamentals and basic projects",
+        imgArr: ["/projects/Electronics/LED.png", 
+          "/projects/Electronics/led code.png", 
+          "/projects/Electronics/Car.png",
+          "/projects/Electronics/car code.png"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Designed various electronics projects using TinkerCAD, proteus and other relevant softwares",
+        "Designed circuits, assembled them, and programmed them",
+      ],
+      bullets: [
+        "Used tinkercad to design and simulate circuiits",
+        "physically implemented all circuiits by soldering",
+      ],
+    },
+  },
+  {
+    id: "CTF-streak",
+    companyName: "CTF streak",
+    type: "Cybersecurity",
+    category: ["Reverse engineering", "Cryptography", "Penetration Testing"],
+    shortDescription:
+      "Solved 120+ Capture The Flag challenges on pico and TryHackMe",
+    githubLink: "https://gist.github.com/Iqmaa?direction=asc&page=4&sort=created",
+    websiteLink: "https://iqmacodes.hashnode.dev/lessons-from-completing-over-a-100-ctfs",
+    techStack: [
+      "cryptography",
+      "Reverse engineering",
+      "Web exploitation",
+      "SQL injection",
+    ],
+    startDate: new Date("2023-06-01"),
+    endDate: new Date("2023-12-01"),
+    companyLogoImg: "/projects/CTFs/CTF logo.png",
+    pagesInfoArr: [
+      {
+        title: "crypto",
+        description:
+          "Solved various cryptography CTFs with the help of cyberchef",
+        imgArr: ["/projects/CTFs/cryptography.png"],
+      },
+      {
+        title: "reverse",
+        description:
+          "Reverse engineered pdb files using IDA ",
+        imgArr: ["/projects/CTFs/reveng.png"],
+      },    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Learnt in-depth and improved my problem solving skills alongside various skills related to cryptography, reverse engineering, and web exploitation",
+        "Solved 120+ Capture The Flag challenges and wrote an article about my experience https://iqmacodes.hashnode.dev/lessons-from-completing-over-a-100-ctfs",
+      ],
+      bullets: [
+        "solved various web and cryptography challenges.",
+        "Worked with diassemblers like IDA.",
+      ],
+    },
+  },
+  {
+    id: "General-Tech-Blog",
+    companyName: "General Tech Blog",
+    type: "Technical Writing",
+    category: ["Web Dev", "AI/ML", "Cybersecurity"],
+    shortDescription:
+      "Running an explanatory tech blogs with over a 1000 reads",
+    websiteLink: "https://iqmacodes.hashnode.dev/",
+    techStack: [
+      "Python",
+      "Linux",
+      "HTML",
+      "CSS",
+      "Markdown",
+    ],
+    startDate: new Date("2021-07-01"),
+    endDate: new Date("2022-07-01"),
+    companyLogoImg: "/projects/general blog/Blog.png",
+    pagesInfoArr: [
+      {
+        title: "Tech blog",
+        description:
+          "Wrote articles on general tech topics like AI/ML, coding, and cybersecurity",
+        imgArr: [
+          "/projects/general blog/code_blog.webp",
+        ],
+      },
+      {
+        title: "Cybersecurity subsection",
+        description:
+          "Contains articles on CTFs, reverse engineering, and cryptography",
+        imgArr: ["/projects/Rev-eng blog/weirdsnake.png"],
+      },
+      {
+        title: "AI/ML subsection",
+        description:
+          "Articles on general ML topics and LLMs,",
+        imgArr: [
+          "/projects/general blog/nlp_blog.webp",
+        ],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "30+ aricles on various topics",
+        "1000+ total reads on various articles",
+      ],
+      bullets: [
+        "SEO optimised articles",
+        "Beautifully Designed article covers for brand consistency",
+        "Contributing to the FreeCodeCamp publication",
+      ],
+    },
+  },
+  {
+    id: "Reverse-engineering-blog",
+    companyName: "Reverse engineering blog",
+    type: "Technical Writing",
+    category: ["Reverse engineering", "Cybersecurity"],
+    shortDescription:
+      "Developed a blog focused on reverse engineering",
+    websiteLink: "https://iqmacodes.hashnode.dev/series/cybersecurity",
+    techStack: ["CSS", "Javascript", "HTML", "Django", "Arduino"],
+    startDate: new Date("2021-07-14"),
+    endDate: new Date("2022-07-01"),
+    companyLogoImg: "/projects/Rev-eng blog/rev-eng blog.png",
+    pagesInfoArr: [
+      {
+        title: "CTF reversing",
+        description: "Reversing for CTF challenges",
+        imgArr: ["/projects/Rev-eng blog/weirdsnake.png"], 
+      },
+      {
+        title: "Code reversing",
+        description: "reversing my own code",
+        imgArr: ["/projects/Rev-eng blog/calculator.png", 
+          "/projects/Rev-eng blog/hello world.png"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Utilised my knowledge of C/C++ , and assembly to reverse engineer files",
+      ],
+      bullets: [
+        "Reading through and understanding disassembly",
+        "Reverse engneered binary files using IDA",
+      ],
+    },
+  },
+  {
+    id: "TMDB-Mintlify",
+    companyName: "TMDB Mintlify Docs",
+    type: "Technical Writing",
+    category: ["Technical Writing"],
+    shortDescription:
+      "Created an API documentation for The Movie DataBase using Postman and Mintlify",
+    websiteLink: "https://iqma-31aad55c.mintlify.app/api-reference/",
+    techStack: ["Postman", "Mintlify"],
+    startDate: new Date("2024-11-01"),
+    endDate: new Date("2024-12-15"),
+    companyLogoImg: "/projects/TMDB/TMDB logo.png",
+    pagesInfoArr: [
+      {
+        title: "TMDB HomePage",
+        description:
+          "Main Introduction to TMDB page, and API authentication guide",
+        imgArr: ["/projects/TMDB/TMDB intro.png", "/projects/TMDB/TMDB postman.png"],
+      },
+      {
+        title: "API Reference",
+        description:
+          "In-depth API documentation",
+        imgArr: ["/projects/TMDB/TMDB API 1.png", "/projects/TMDB/TMDB API 2.png"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Created a user-friendly project using postman and Mintlify",
+        "Tested each endpoint and provided sample requests and responses for each",
+      ],
+      bullets: [
+        "Created a user-friendly project using postman and Mintlify",
+        "Tested each endpoint and provided sample requests and responses for each",
+        "Created an OpenAPI spec file to make the documentation easy to move",
+        "Converted the spec file and imported on Mintlify for better user experience",
+        "Created a parameter definition page to make the documentation more comprehensive and beginner friendly",
+        "Published the documentation and enhance my skills in API documentation",
+      ],
+    },
+  },
+];
+
+export const featuredProjects = Projects.slice(0, 3);
+</file>
+
+<file path="hooks/use-modal-store.ts">
+import { create } from "zustand";
+
+interface ModalDataProps {
+  title: string;
+  description: string;
+  icon: any;
+  // link?: {
+  //     label: string;
+  //     link: string;
+  // }
+}
+
+interface ModalStoreProps {
+  isOpen: boolean;
+  title: string;
+  description: string;
+  icon: any;
+  onOpen: (data: ModalDataProps) => void;
+  onClose: () => void;
+}
+
+export const useModalStore = create<ModalStoreProps>((set) => ({
+  isOpen: false,
+  title: "",
+  description: "",
+  icon: null,
+  onOpen: (data: any) =>
+    set({
+      isOpen: true,
+      title: data.title,
+      description: data.description,
+      icon: data.icon,
+    }),
+  onClose: () => set({ isOpen: false }),
+}));
+</file>
+
+<file path="information/structure.md">
+This is the folder structure of the whole application
+
+.
+├── README.md
+├── app
+│ ├── (root)
+│ │ ├── contact
+│ │ │ └── page.tsx
+│ │ ├── contributions
+│ │ │ └── page.tsx
+│ │ ├── experience
+│ │ │ ├── [expId]
+│ │ │ │ └── page.tsx
+│ │ │ └── page.tsx
+│ │ ├── layout.tsx
+│ │ ├── page.tsx
+│ │ ├── projects
+│ │ │ ├── [projectId]
+│ │ │ │ └── page.tsx
+│ │ │ └── page.tsx
+│ │ ├── resume
+│ │ │ └── page.tsx
+│ │ └── skills
+│ │ └── page.tsx
+│ ├── api
+│ │ └── contact
+│ │ └── route.ts
+│ ├── favicon.ico
+│ ├── globals.css
+│ ├── layout.tsx
+│ └── manifest.ts
+├── assets
+│ └── fonts
+│ ├── CalSans-SemiBold.ttf
+│ ├── CalSans-SemiBold.woff
+│ ├── CalSans-SemiBold.woff2
+│ ├── Inter-Bold.ttf
+│ └── Inter-Regular.ttf
+├── components
+│ ├── common
+│ │ ├── analytics.tsx
+│ │ ├── animated-section.tsx
+│ │ ├── icons.tsx
+│ │ ├── main-nav.tsx
+│ │ ├── mobile-nav.tsx
+│ │ ├── mode-toggle.tsx
+│ │ ├── page-container.tsx
+│ │ ├── page-header.tsx
+│ │ ├── site-footer.tsx
+│ │ └── theme-provider.tsx
+│ ├── contact
+│ │ └── github-redirect-card.tsx
+│ ├── contributions
+│ │ └── contribution-card.tsx
+│ ├── experience
+│ │ ├── experience-card.tsx
+│ │ └── timeline.tsx
+│ ├── projects
+│ │ ├── exp-description.tsx
+│ │ └── project-card.tsx
+│ ├── forms
+│ │ └── contact-form.tsx
+│ ├── modals
+│ │ └── custom-modal.tsx
+│ ├── skills
+│ │ ├── rating.tsx
+│ │ └── skills-card.tsx
+│ └── ui
+│ ├── accordion.tsx
+│ ├── button.tsx
+│ ├── card.tsx
+│ ├── chip-container.tsx
+│ ├── chip.tsx
+│ ├── custom-tooltip.tsx
+│ ├── dialog.tsx
+│ ├── dropdown-menu.tsx
+│ ├── form.tsx
+│ ├── input.tsx
+│ ├── label.tsx
+│ ├── modal.tsx
+│ ├── tabs.tsx
+│ ├── textarea.tsx
+│ ├── toast.tsx
+│ ├── toaster.tsx
+│ ├── tooltip.tsx
+│ └── use-toast.ts
+├── components.json
+├── config
+│ ├── constants.ts
+│ ├── contributions.ts
+│ ├── experience.ts
+│ ├── pages.ts
+│ ├── projects.ts
+│ ├── routes.ts
+│ ├── site.ts
+│ ├── skills.ts
+│ └── socials.ts
+├── hooks
+│ ├── use-lock-body.ts
+│ └── use-modal-store.ts
+├── lib
+│ └── utils.ts
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── providers
+│ └── modal-provider.tsx
+├── public
+│ ├── experience
+│ │ ├── apex
+│ │ │ ├── app_1.webp
+│ │ │ ├── app_2.webp
+│ │ │ ├── app_3.webp
+│ │ │ ├── app_4.webp
+│ │ │ ├── app_5.webp
+│ │ │ ├── app_6.webp
+│ │ │ ├── app_7.webp
+│ │ │ ├── db.webp
+│ │ │ └── logo.png
+│ │ ├── builtdesign
+│ │ │ ├── cli_dashboard_1.webp
+│ │ │ ├── cli_dashboard_2.webp
+│ │ │ ├── cli_dashboard_3.webp
+│ │ │ ├── landing_1.webp
+│ │ │ ├── landing_2.webp
+│ │ │ ├── landing_3.webp
+│ │ │ ├── landing_4.webp
+│ │ │ ├── landing_5.webp
+│ │ │ ├── landing_6.webp
+│ │ │ ├── logo.png
+│ │ │ └── pdf_opt.webp
+│ │ ├── builtdesign-blogs
+│ │ │ ├── blog_1.webp
+│ │ │ ├── blog_2.webp
+│ │ │ ├── blog_3.webp
+│ │ │ ├── blog_4.webp
+│ │ │ ├── blog_5.webp
+│ │ │ └── logo.png
+│ │ ├── card
+│ │ │ ├── card_1.webp
+│ │ │ ├── card_2.webp
+│ │ │ ├── card_3.webp
+│ │ │ ├── card_4.webp
+│ │ │ └── logo.png
+│ │ ├── cirql
+│ │ │ ├── logo.png
+│ │ │ ├── web_1.png
+│ │ │ ├── web_2.png
+│ │ │ ├── web_3.png
+│ │ │ └── web_4.png
+│ │ ├── hindi-keyboard
+│ │ │ ├── logo.png
+│ │ │ ├── web_1.png
+│ │ │ ├── web_2.png
+│ │ │ └── web_3.png
+│ │ ├── supercareer
+│ │ │ └── logo.png
+│ │ └── superquotes
+│ │ ├── app_1.webp
+│ │ ├── app_2.webp
+│ │ ├── app_3.webp
+│ │ ├── app_4.webp
+│ │ ├── app_5.webp
+│ │ ├── app_6.webp
+│ │ ├── app_7.webp
+│ │ └── logo.png
+│ ├── logo.png
+│ ├── profile-img.jpg
+│ ├── next.svg
+│ └── vercel.svg
+├── tailwind.config.js
+└── tsconfig.json
+</file>
+
+<file path="providers/modal-provider.tsx">
+"use client";
+
+import { useEffect, useState } from "react";
+
+import { CustomModal } from "@/components/modals/custom-modal";
+
+export const ModalProvider = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
+  return (
+    <>
+      <CustomModal />
+    </>
+  );
+};
+</file>
+
+<file path="app/(root)/projects/[projectId]/page.tsx">
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation"; // Changed from redirect for better static handling
+
+import { Icons } from "@/components/common/icons";
+import ProjectDescription from "@/components/projects/project-description";
+import { buttonVariants } from "@/components/ui/button";
+import ChipContainer from "@/components/ui/chip-container";
+import CustomTooltip from "@/components/ui/custom-tooltip";
+import { Projects } from "@/config/projects";
+import { siteConfig } from "@/config/site";
+import { cn, formatDateFromObj } from "@/lib/utils";
+import profileImg from "@/public/profile-img.jpg";
+
+interface ProjectPageProps {
+  params: Promise<{
+    projectId: string;
+  }>;
+}
+
+// 1. Add this function to generate static paths at build time
+export async function generateStaticParams() {
+  return Projects.map((project) => ({
+    projectId: project.id,
+  }));
+}
+
+// 2. Force static rendering
+export const dynamic = "force-static";
+
+export default async function Project({ params }: ProjectPageProps) {
+  const { projectId } = await params;
+  let project = Projects.find((val) => val.id === projectId);
+  
+  if (!project) {
+    // 3. Use notFound() instead of redirect() for static pages 
+    // to ensure proper 404 behavior on GitHub Pages
+    notFound();
+  }
+
+  return (
+    <article className="container relative max-w-3xl py-6 lg:py-10">
+      <Link
+        href="/projects"
+        className={cn(
+          buttonVariants({ variant: "ghost" }),
+          "absolute left-[-200px] top-14 hidden xl:inline-flex"
+        )}
+      >
+        <Icons.chevronLeft className="mr-2 h-4 w-4" />
+        All Projects
+      </Link>
+      <div>
+        <time
+          dateTime={new Date().toISOString()}
+          className="block text-sm text-muted-foreground"
+        >
+          {formatDateFromObj(project.startDate)}
+        </time>
+        <h1 className="flex items-center justify-between mt-2 font-heading text-4xl leading-tight lg:text-5xl">
+          {project.companyName}
+          <div className="flex items-center">
+            {project.githubLink && (
+              <CustomTooltip text="Link to the source code.">
+                <Link href={project.githubLink} target="_blank">
+                  <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
+                </Link>
+              </CustomTooltip>
+            )}
+            {project.websiteLink && (
+              <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
+                <Link href={project.websiteLink} target="_blank">
+                  <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
+                </Link>
+              </CustomTooltip>
+            )}
+          </div>
+        </h1>
+        <ChipContainer textArr={project.category} />
+        <div className="mt-4 flex space-x-4">
+          <Link
+            href={siteConfig.links.github}
+            className="flex items-center space-x-2 text-sm"
+          >
+            <Image
+              src={profileImg}
+              alt={"Iqma"}
+              width={42}
+              height={42}
+              className="rounded-full bg-background"
+            />
+
+            <div className="flex-1 text-left leading-tight">
+              <p className="font-medium">{"Iqma"}</p>
+              <p className="text-[12px] text-muted-foreground">
+                @{siteConfig.username}
+              </p>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <Image
+        src={project.companyLogoImg}
+        alt={project.companyName}
+        width={720}
+        height={405}
+        className="my-8 rounded-md border bg-muted transition-colors"
+        priority
+      />
+
+      <div className="mb-7 ">
+        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
+          Tech Stack
+        </h2>
+        <ChipContainer textArr={project.techStack} />
+      </div>
+
+      <div className="mb-7 ">
+        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
+          Description
+        </h2>
+        <ProjectDescription
+          paragraphs={project.descriptionDetails.paragraphs}
+          bullets={project.descriptionDetails.bullets}
+        />
+      </div>
+
+      <div className="mb-7 ">
+        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+          Page Info
+        </h2>
+        {project.pagesInfoArr.map((page, ind) => (
+          <div key={ind}>
+            <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+              <Icons.star className="h-5 w-5 mr-2" /> {page.title}
+            </h3>
+            <div>
+              <p>{page.description}</p>
+              {page.imgArr.map((img, imgInd) => (
+                <Image
+                  src={img}
+                  key={imgInd}
+                  alt={page.title}
+                  width={720}
+                  height={405}
+                  className="my-4 rounded-md border bg-muted transition-colors"
+                  priority
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <hr className="mt-12" />
+      <div className="flex justify-center py-6 lg:py-10">
+        <Link
+          href="/projects"
+          className={cn(buttonVariants({ variant: "ghost" }))}
+        >
+          <Icons.chevronLeft className="mr-2 h-4 w-4" />
+          All Projects
+        </Link>
+      </div>
+    </article>
+  );
+}
+</file>
+
+<file path="app/(root)/resume/page.tsx">
+"use client";
+import { redirect } from "next/navigation";
+import { useEffect } from "react";
+
+export default function ResumePage() {
+  useEffect(() => {
+    redirect(process.env.NEXT_PUBLIC_RESUME_LINK || "/");
+  }, []);
+  return <div>Redirecting to the resume...</div>;
+}
+</file>
+
+<file path="app/api/contact/route.ts">
+import { NextResponse } from "next/server";
+
+export async function POST(req: Request) {
+  const formLink = process.env.GOOGLE_FORM_LINK;
+  if (!formLink) {
+    return new NextResponse("Please configure the env variables", {
+      status: 500,
+    });
+  }
+
+  // configure this according to your google form
+  const fieldIdName = process.env.GOOGLE_FORM_FIELD_ID_NAME;
+  const fieldIdEmail = process.env.GOOGLE_FORM_FIELD_ID_EMAIL;
+  const fieldIdMessage = process.env.GOOGLE_FORM_FIELD_ID_MESSAGE;
+  const fieldIdSocial = process.env.GOOGLE_FORM_FIELD_ID_SOCIAL;
+
+  try {
+    const body = await req.json();
+    const { name, message, social, email } = body;
+
+    const res = await fetch(
+      `${formLink}/formResponse?${fieldIdName}=${name}&${fieldIdEmail}=${email}&${fieldIdMessage}=${message}&${fieldIdSocial}=${social}`
+    );
+
+    return NextResponse.json("Success!");
+  } catch (error) {
+    console.log(error);
+    return new NextResponse("Internal error", { status: 500 });
+  }
+}
+</file>
+
+<file path="components/common/mobile-nav.tsx">
+import { Norican } from "next/font/google";
+import Link from "next/link";
+import * as React from "react";
+
+import { siteConfig } from "@/config/site";
+import { useLockBody } from "@/hooks/use-lock-body";
+import { cn } from "@/lib/utils";
+
+interface MobileNavProps {
+  items: any[];
+  children?: React.ReactNode;
+}
+
+const norican = Norican({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export function MobileNav({ items, children }: MobileNavProps) {
+  useLockBody();
+
+  return (
+    <div
+      className={cn(
+        "fixed inset-0 top-12 z-50 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-top-10 md:hidden"
+      )}
+    >
+      <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
+        <Link href="/" className="flex items-center space-x-2">
+          <span className={cn(norican.className, "text-2xl")}>
+            {siteConfig.authorName}
+          </span>
+        </Link>
+        <nav className="grid grid-flow-row auto-rows-max text-sm">
+          {items.map((item, index) => (
+            <Link
+              key={index}
+              href={item.disabled ? "#" : item.href}
+              className={cn(
+                "flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline",
+                item.disabled && "cursor-not-allowed opacity-60"
+              )}
+            >
+              {item.title}
+            </Link>
+          ))}
+        </nav>
+        {children ? <div className="pt-2">{children}</div> : null}
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="next.config.js">
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // 1. Required for GitHub Pages deployment
+  output: "export",
+
+  // 2. Mandatory because GitHub Pages has no image optimization server
+  images: {
+    unoptimized: true,
+  },
+
+  // 3. Replace 'your-repo-name' with your actual repository name 
+  // (e.g., if your URL is iqmaa.github.io/portfolio, use "/portfolio")
+  basePath: "/your-repo-name",
+
+  // Note: headers() is ignored by "output: export" on GitHub Pages,
+  // but keeping it here won't break the build.
+  async headers() {
+    return [
+      {
+        source: "/api/sb-contact",
+        headers: [
+          { key: "Access-Control-Allow-Credentials", value: "true" },
+          {
+            key: "Access-Control-Allow-Methods",
+            value: "GET,DELETE,PATCH,POST,PUT",
+          },
+          {
+            key: "Access-Control-Allow-Headers",
+            value:
+              "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+        ],
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;
+</file>
+
+<file path="tailwind.config.js">
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ["class"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
+  theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: {
+      colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+        heading: ["var(--font-heading)", ...fontFamily.sans],
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: 0 },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: 0 },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
+  safelist: [
+    "dark",
+    "retro",
+    "cyberpunk",
+    "paper",
+    "aurora",
+    "synthwave",
+    {
+      pattern:
+        /^(.*?)(dark|retro|cyberpunk|paper|aurora|synthwave)([:.])(.*?)$/,
+    },
+  ],
+};
+</file>
+
+<file path=".env.copy">
+# find gform usage in api/contact/route.ts file
+GOOGLE_FORM_LINK=your_gform_prefilled_link
+GOOGLE_FORM_FIELD_ID_NAME=entry_field_id_gform
+GOOGLE_FORM_FIELD_ID_EMAIL=entry_field_id_gform
+GOOGLE_FORM_FIELD_ID_MESSAGE=entry_field_id_gform
+GOOGLE_FORM_FIELD_ID_SOCIAL=entry_field_id_gform
+
+# Google Analytics
+NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID=G-XXXXXXXXXX
+
+# Resume Link
+NEXT_PUBLIC_RESUME_LINK=your_resume_link
+</file>
+
+<file path="app/globals.css">
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .retro {
+    --background: 39 70% 90%;
+    --foreground: 20 80% 20%;
+
+    --muted: 30 40% 85%;
+    --muted-foreground: 20 40% 30%;
+
+    --popover: 39 70% 90%;
+    --popover-foreground: 20 80% 20%;
+
+    --border: 20 40% 70%;
+    --input: 20 40% 70%;
+
+    --card: 39 60% 85%;
+    --card-foreground: 20 80% 20%;
+
+    --primary: 20 80% 50%;
+    --primary-foreground: 39 100% 97%;
+
+    --secondary: 30 60% 80%;
+    --secondary-foreground: 20 80% 20%;
+
+    --accent: 20 80% 50%;
+    --accent-foreground: 39 100% 97%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 39 100% 97%;
+
+    --ring: 20 40% 70%;
+
+    --radius: 0.125rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .cyberpunk {
+    --background: 235 85% 8%;
+    --foreground: 180 100% 75%;
+
+    --muted: 235 70% 15%;
+    --muted-foreground: 180 70% 55%;
+
+    --popover: 235 85% 8%;
+    --popover-foreground: 180 100% 75%;
+
+    --border: 326 100% 60%;
+    --input: 326 100% 60%;
+
+    --card: 235 80% 12%;
+    --card-foreground: 180 100% 75%;
+
+    --primary: 326 100% 60%;
+    --primary-foreground: 235 100% 98%;
+
+    --secondary: 196 100% 60%;
+    --secondary-foreground: 235 85% 8%;
+
+    --accent: 58 100% 60%;
+    --accent-foreground: 235 85% 8%;
+
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 235 100% 98%;
+
+    --ring: 326 100% 60%;
+
+    --radius: 0.125rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .aurora {
+    --background: 220 40% 10%;
+    --foreground: 160 100% 90%;
+
+    --muted: 220 30% 20%;
+    --muted-foreground: 160 70% 70%;
+
+    --popover: 220 40% 10%;
+    --popover-foreground: 160 100% 90%;
+
+    --border: 280 80% 60%;
+    --input: 280 80% 60%;
+
+    --card: 220 35% 15%;
+    --card-foreground: 160 100% 90%;
+
+    --primary: 160 100% 50%;
+    --primary-foreground: 220 40% 10%;
+
+    --secondary: 280 80% 60%;
+    --secondary-foreground: 220 40% 10%;
+
+    --accent: 320 80% 60%;
+    --accent-foreground: 220 40% 10%;
+
+    --destructive: 0 90% 60%;
+    --destructive-foreground: 220 40% 10%;
+
+    --ring: 280 80% 60%;
+
+    --radius: 1rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .synthwave {
+    --background: 260 15% 10%;
+    --foreground: 330 100% 90%;
+
+    --muted: 260 20% 20%;
+    --muted-foreground: 330 70% 70%;
+
+    --popover: 260 15% 10%;
+    --popover-foreground: 330 100% 90%;
+
+    --border: 300 100% 60%;
+    --input: 300 100% 60%;
+
+    --card: 260 15% 15%;
+    --card-foreground: 330 100% 90%;
+
+    --primary: 300 100% 60%;
+    --primary-foreground: 260 15% 10%;
+
+    --secondary: 190 100% 60%;
+    --secondary-foreground: 260 15% 10%;
+
+    --accent: 60 100% 60%;
+    --accent-foreground: 260 15% 10%;
+
+    --destructive: 350 100% 60%;
+    --destructive-foreground: 260 15% 10%;
+
+    --ring: 300 100% 60%;
+
+    --radius: 0.5rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .paper {
+    --background: 40 30% 95%;
+    --foreground: 25 50% 20%;
+
+    --muted: 30 20% 90%;
+    --muted-foreground: 25 30% 40%;
+
+    --popover: 40 30% 95%;
+    --popover-foreground: 25 50% 20%;
+
+    --border: 25 30% 80%;
+    --input: 25 30% 80%;
+
+    --card: 35 25% 92%;
+    --card-foreground: 25 50% 20%;
+
+    --primary: 25 95% 40%;
+    --primary-foreground: 40 30% 98%;
+
+    --secondary: 15 60% 85%;
+    --secondary-foreground: 25 50% 20%;
+
+    --accent: 15 60% 85%;
+    --accent-foreground: 25 50% 20%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 30% 98%;
+
+    --ring: 25 30% 80%;
+
+    --radius: 0.25rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig"1,
+      "calt"1;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  /* padding: 1rem; */
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.1),
+    0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1),
+    0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+  .card {
+    height: 300px;
+  }
+}
+
+/* .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+} */
+
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.009) 11.7%,
+      rgba(0, 0, 0, 0.034) 22.1%,
+      rgba(0, 0, 0, 0.072) 31.2%,
+      rgba(0, 0, 0, 0.123) 39.4%,
+      rgba(0, 0, 0, 0.182) 46.6%,
+      rgba(0, 0, 0, 0.249) 53.1%,
+      rgba(0, 0, 0, 0.32) 58.9%,
+      rgba(0, 0, 0, 0.394) 64.3%,
+      rgba(0, 0, 0, 0.468) 69.3%,
+      rgba(0, 0, 0, 0.54) 74.1%,
+      rgba(0, 0, 0, 0.607) 78.8%,
+      rgba(0, 0, 0, 0.668) 83.6%,
+      rgba(0, 0, 0, 0.721) 88.7%,
+      rgba(0, 0, 0, 0.762) 94.1%,
+      rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+
+.content>*+* {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: hsl(var(--primary-foreground));
+  background-color: hsl(var(--primary));
+  border: none;
+}
+
+.btn:hover {
+  background-color: hsl(var(--primary) / 0.9);
+}
+
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+
+  .content>*:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition:
+      transform var(--d) var(--e),
+      opacity var(--d) var(--e);
+  }
+
+  .card:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+
+  .card:hover:before,
+  .card:focus-within:before {
+    transform: translateY(-4%);
+  }
+
+  .card:hover:after,
+  .card:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card:hover .content,
+  .card:focus-within .content {
+    transform: translateY(0);
+  }
+
+  .card:hover .content>*:not(.title),
+  .card:focus-within .content>*:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card:focus-within:before,
+  .card:focus-within:after,
+  .card:focus-within .content,
+  .card:focus-within .content>*:not(.title) {
+    transition-duration: 0s;
+  }
+}
+
+@supports (animation: grow 0.5s cubic-bezier(0.25, 0.25, 0.25, 1) forwards) {
+  .tick {
+    stroke-opacity: 0;
+    stroke-dasharray: 29px;
+    stroke-dashoffset: 29px;
+    animation: draw 0.5s cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
+    animation-delay: 0.6s;
+  }
+
+  .circle {
+    fill-opacity: 0;
+    stroke: hsl(var(--primary));
+    stroke-width: 16px;
+    transform-origin: center;
+    transform: scale(0);
+    animation: grow 1s cubic-bezier(0.25, 0.25, 0.25, 1.25) forwards;
+  }
+}
+
+@keyframes grow {
+  60% {
+    transform: scale(0.8);
+    stroke-width: 4px;
+    fill-opacity: 0;
+  }
+
+  100% {
+    transform: scale(0.9);
+    stroke-width: 8px;
+    fill-opacity: 1;
+    fill: hsl(var(--primary));
+  }
+}
+
+@keyframes draw {
+
+  0%,
+  100% {
+    stroke-opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+</file>
+
+<file path="app/manifest.ts">
+import type { MetadataRoute } from "next";
+
+// Add this line to force the manifest to be generated as a static file during build
+export const dynamic = "force-static";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "Hikmah Olawore | Robotics Engineer",
+    short_name: "Iqma",
+    description:
+      "Iqma - software and hardware working at the intersection of AI and robotics.",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#ffffff",
+    theme_color: "#000000",
+    icons: [
+      {
+        src: "/favicon.ico",
+        sizes: "64x64",
+        type: "image/png",
+      },
+      {
+        src: "/favicon.ico",
+        sizes: "64x64",
+        type: "image/png",
+        purpose: "maskable",
+      },
+    ],
+    categories: [
+      "portfolio",
+      "ai",
+      "software engineering",
+      "machine learning",
+      "developer",
+      "web development",
+    ],
+    lang: "en",
+    dir: "ltr",
+    scope: "/",
+  };
+}
+</file>
+
+<file path="components/common/icons.tsx">
+import {
+  AlertTriangle,
+  ArrowRight,
+  BookMarked,
+  Building,
+  Check,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  CreditCard,
+  File,
+  FileText,
+  HelpCircle,
+  Image,
+  Laptop,
+  Loader2,
+  LucideProps,
+  Menu,
+  Moon,
+  MoreVertical,
+  Music,
+  Palette,
+  Phone,
+  Pizza,
+  Plus,
+  Scroll,
+  Settings,
+  Sparkles,
+  SunMedium,
+  Trash,
+  User,
+  X,
+  Zap,
+} from "lucide-react";
+import { AiFillStar } from "react-icons/ai";
+import { BiLaugh, BiSolidUser } from "react-icons/bi";
+import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
+import {
+  HiBriefcase,
+  HiOutlineExternalLink,
+  HiOutlineLink,
+} from "react-icons/hi";
+import { IoIosGitBranch } from "react-icons/io";
+import {
+  SiBootstrap,
+  SiCss3,
+  SiExpress,
+  SiGmail,
+  SiHtml5,
+  SiJavascript,
+  SiLinkedin,
+  SiMysql,
+  SiNestjs,
+  SiNetlify,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+  SiX,
+  SiC,
+  SiAutocad,
+  SiTinkercad,
+  SiRos,
+  SiArduino,
+  SiPostman,
+  SiMintlify,
+  SiCanva,
+  SiPostgresql,
+  SiTryhackme,
+  SiHackthebox,
+  SiLinux,
+} from "react-icons/si";
+import { VscTerminalCmd } from "react-icons/vsc";
+import { TbSeo } from "react-icons/tb";
+import { GiSolderingIron } from "react-icons/gi";
+import { 
+  FaPython,
+  FaLinux,
+ } from "react-icons/fa";
+
+export const Icons = {
+  contact: Phone,
+  gitRepoIcon: BookMarked,
+  gitOrgBuilding: Building,
+  gitBranch: IoIosGitBranch,
+  close: X,
+  spinner: Loader2,
+  chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
+  trash: Trash,
+  post: FileText,
+  page: File,
+  media: Image,
+  settings: Settings,
+  billing: CreditCard,
+  ellipsis: MoreVertical,
+  add: Plus,
+  warning: AlertTriangle,
+  user: User,
+  arrowRight: ArrowRight,
+  help: HelpCircle,
+  pizza: Pizza,
+  sun: SunMedium,
+  moon: Moon,
+  laptop: Laptop,
+  menu: Menu,
+  chevronDown: ChevronDown,
+  laughEmoji: BiLaugh,
+  check: Check,
+  infoMark: BsInfoCircle,
+  questionMark: BsQuestionCircle,
+  link: HiOutlineLink,
+  externalLink: HiOutlineExternalLink,
+  star: AiFillStar,
+  bootstrap: SiBootstrap,
+  css3: SiCss3,
+  express: SiExpress,
+  html5: SiHtml5,
+  javascript: SiJavascript,
+  mysql: SiMysql,
+  nestjs: SiNestjs,
+  netlify: SiNetlify,
+  react: SiReact,
+  tailwindcss: SiTailwindcss,
+  typescript: SiTypescript,
+  gmail: SiGmail,
+  twitter: SiX,
+  linkedin: SiLinkedin,
+  userFill: BiSolidUser,
+  work: HiBriefcase,
+  python: FaPython,
+  linux: SiLinux,
+  c : SiC,
+  autocad: SiAutocad,
+  tinkercad: SiTinkercad,
+  ros2: SiRos,
+  arduino: SiArduino,
+  postman: SiPostman,
+  mintlify: SiMintlify,
+  canva: SiCanva,
+  postgresql: SiPostgresql,
+  soldering: GiSolderingIron,
+  seo: TbSeo,
+  gazebo: SiHackthebox,
+  reversing: SiTryhackme,
+  assembly: VscTerminalCmd,
+
+  gitHub: ({ ...props }: LucideProps) => (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="fab"
+      data-icon="github"
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 496 512"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+      ></path>
+    </svg>
+  ),
+  successAnimated: ({ ...props }: LucideProps) => (
+    <div className="svg-container">
+      <svg
+        className="ft-green-tick"
+        xmlns="http://www.w3.org/2000/svg"
+        height="5rem"
+        width="5rem"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+        {...props}
+      >
+        <circle className="circle" cx="24" cy="24" r="22" />
+        <path
+          className="tick"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-miterlimit="10"
+          d="M14 27l5.917 4.917L34 17"
+        />
+      </svg>
+    </div>
+  ),
+  retro: Palette,
+  cyberpunk: Zap,
+  paper: Scroll,
+  aurora: Sparkles,
+  synthwave: Music,
+};
+</file>
+
+<file path="config/contributions.ts">
+export interface contributionsInterface {
+  repo: string;
+  contibutionDescription: string;
+  repoOwner: string;
+  link: string;
+}
+
+export const contributionsUnsorted: contributionsInterface[] = [ //add links  //remove private details in resume
+  {
+    repo: "Free-code-camp",
+    contibutionDescription:
+      "Contributed to the freecodecamp publication",
+    repoOwner: "FreeCodeCamp",
+    link: "https://www.freecodecamp.org/news/author/Iqma/",
+  },
+  // {
+  //   repo: "hacktoberfest-chaoss",
+  //   contibutionDescription:
+  //     "wrote articles for the chaoss blog",
+  //   repoOwner: "CHAOSS Africa",
+  //   link: "",
+  // },
+  {
+    repo: "hacktoberfest-mautic",
+    contibutionDescription:
+      "Helped to improve Mautic's documentation",
+    repoOwner: "Mautic",
+    link: "https://github.com/mautic/mautic-community-handbook/pull/230",
+  },
+    {
+    repo: "hacktoberfest-UmbracoDocs",
+    contibutionDescription:
+      "Helped to improve umbraco's documentation",
+    repoOwner: "Umbraco",
+    link: "https://github.com/umbraco/UmbracoDocs/pull/6501",
+  },
+];
+
+export const featuredContributions: contributionsInterface[] =
+  contributionsUnsorted.slice(0, 3);
+</file>
+
+<file path="config/skills.ts">
+import { Icons } from "@/components/common/icons";
+
+export interface skillsInterface {
+  name: string;
+  description: string;
+  rating: number;
+  icon: any;
+}
+
+export const skillsUnsorted: skillsInterface[] = [
+  {
+    name: "Python",
+    description:
+      "Develop versatile scripts, automation tools, and AI models with clean, readable, and efficient code.",
+    rating: 5,
+    icon: (props: any) => Icons.python({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-11px', marginBottom:'4px'}}), 
+  },
+  {
+    name: "C/C++ \t",
+    description:
+      "Write high-performance, low-level software for systems where memory management and speed are critical.",
+    rating: 5,
+    icon: (props: any) => Icons.c({...props, style: {width: '40px', height:'40px', marginTop:'-8px',marginLeft:'-6px', marginBottom:'6px'}}), 
+  },
+  {
+    name: "ROS2",
+    description:
+      "Architect distributed robotic systems using nodes, topics, and services for robust middleware communication.",
+    rating: 4,
+    icon: (props: any) => Icons.ros2({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-5px', marginBottom:'8px'}}), 
+  },
+  {
+    name: "Gazebo",
+    description:
+      "Create high-fidelity 3D robotic simulations to test algorithms in physics-based virtual environments.",
+    rating: 5,
+    icon: (props: any) => Icons.gazebo({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-11px', marginBottom:'4px'}}), 
+  },
+  {
+    name: "AutoCAD/Fusion360",
+    description:
+      "Design complex mechanical parts and assemblies using parametric 3D modeling and CAD/CAM workflows.",
+    rating: 5,
+    icon: (props: any) => Icons.autocad({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-1px', marginBottom:'0px'}}), 
+  },
+  {
+    name: "Electronics",
+    description:
+      "Design and prototype circuit boards and soldering for hardware projects.",
+    rating: 5,
+    icon: (props: any) => Icons.soldering({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-1px', marginBottom:'0px'}}), 
+  },
+  {
+    name: "Arduino",
+    description:
+      "Bridge the gap between software and hardware by programming microcontrollers to interact with sensors and actuators.",
+    rating: 5,
+    icon: (props: any) => Icons.arduino({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-11px', marginBottom:'4px'}}), 
+  },
+  {
+    name: "IDA PRO",
+    description:
+      "Perform deep static and dynamic analysis to reverse engineer binary executables and uncover software logic.",
+    rating: 5,
+    icon: (props: any) => Icons.reversing({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-8px', marginBottom:'4px'}}), 
+  },
+  {
+    name: "Javascript",
+    description:
+      "Create interactive and dynamic web experiences with the versatile scripting language.",
+    rating: 5,
+    icon: (props: any) => Icons.javascript({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-8px', marginBottom:'8px'}}), 
+  },
+  {
+    name: "HTML 5",
+    description:
+      "Structure web content beautifully with the latest version of HyperText Markup Language. Frontend development",
+    rating: 4,
+    icon: (props: any) => Icons.html5({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-11px', marginBottom:'4px'}}), 
+  },
+  {
+    name: "CSS 3",
+    description:
+      "Style web pages creatively with the latest iteration of Cascading Style Sheets. Frontend development",
+    rating: 4,
+    icon: Icons.css3,
+  },
+  {
+    name: "Assembly",
+    description:
+      "Analyze low-level CPU instructions to understand malware and reverse engineer codes to exploit them.",
+    rating: 4,
+    icon: Icons.assembly,
+  },
+  {
+    name: "Linux",
+    description:
+      "Navigate and manage Unix-based systems using command-line tools for security auditing, and development.",
+    rating: 5,
+    icon: (props: any) => Icons.linux({...props, style: {width: '50px', height:'90px', marginLeft:'-6px', marginTop:'-11px', marginBottom:'4px'}}),
+  },
+  {
+    name: "Postman",
+    description:
+      "Document and test RESTful APIs by creating comprehensive collections and automated test scripts for developer use.",
+    rating: 5,
+    icon: (props: any) => Icons.postman({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-1px', marginBottom:'4px'}}), 
+  },
+  {
+    name: "MKDocs & Mintlify",
+    description:
+      "Build high-quality documentation sites using Docs-as-Code workflows and Markdown.",
+    rating: 5,
+    icon: (props: any) => Icons.mintlify({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'6px', marginBottom:'7px'}}),
+  },
+  {
+    name: "Technical Wriitng",
+    description:
+      "Optimize technical content for search engines to increase visibility, authority, and organic traffic for developer resources",
+    rating: 4,
+    icon: (props: any) => Icons.seo({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'-1px', marginBottom:'4px'}}), 
+  },
+  {
+    name: "Bootstrap",
+    description:
+      "Quickly create responsive and appealing web designs using a popular CSS framework. Frontend development",
+    rating: 4,
+    icon: Icons.bootstrap,
+  },
+  {
+    name: "PostgreSQL",
+    description:
+      "Manage and organize relational databases efficiently for data-driven applications.",
+    rating: 3,
+    icon: Icons.postgresql,
+  },
+  {
+    name: "Canva",
+    description:
+      "Create professional designs for articles using graphic design tools and templates.",
+    rating: 5,
+    icon: (props: any) => Icons.canva({...props, style: {width: '50px', height:'40px', marginLeft:'-6px', marginTop:'4px', marginBottom:'4px'}}), 
+  },
+];
+
+export const skills = skillsUnsorted
+  .slice()
+  .sort((a, b) => b.rating - a.rating);
+
+export const featuredSkills = skills.slice(0, 6);
+</file>
+
+<file path="app/(root)/contributions/page.tsx">
+import { Metadata } from "next";
+
+import PageContainer from "@/components/common/page-container";
+import ContributionCard from "@/components/contributions/contribution-card";
+import { contributionsUnsorted } from "@/config/contributions";
+import { pagesConfig } from "@/config/pages";
+
+export const metadata: Metadata = {
+  title: pagesConfig.contributions.metadata.title,
+  description: pagesConfig.contributions.metadata.description,
+};
+
+export default function ContributonsPage() {
+  return (
+    <PageContainer
+      title={pagesConfig.contributions.title}
+      description={pagesConfig.contributions.description}
+    >
+      <ContributionCard
+        contributions={contributionsUnsorted}
+      />
+    </PageContainer>
+  );
+}
+</file>
+
+<file path="components/common/main-nav.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import { Norican } from "next/font/google";
+import Link from "next/link";
+import { usePathname, useSelectedLayoutSegment } from "next/navigation";
+import * as React from "react";
+
+import { Icons } from "@/components/common/icons";
+import { MobileNav } from "@/components/common/mobile-nav";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
+
+interface MainNavProps {
+  items?: any[];
+  children?: React.ReactNode;
+}
+
+const norican = Norican({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+// Animation variants for the navigation items
+const navItemVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.1 * i,
+      duration: 0.5,
+      ease: "easeOut" as const,
+    },
+  }),
+};
+
+export function MainNav({ items, children }: MainNavProps) {
+  const segment = useSelectedLayoutSegment();
+  const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
+  const pathname = usePathname();
+
+  React.useEffect(() => {
+    setShowMobileMenu(false);
+  }, [pathname]);
+
+  return (
+    <div className="flex gap-6 md:gap-10">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Link href="/" className="hidden items-center space-x-2 md:flex">
+          <span className={cn(norican.className, "text-2xl")}>
+            {siteConfig.authorName}
+          </span>
+        </Link>
+      </motion.div>
+      {items?.length ? (
+        <nav className="hidden gap-6 md:flex items-center">
+          {items?.map((item, index) => (
+            <motion.div
+              key={index}
+              custom={index}
+              initial="hidden"
+              animate="visible"
+              variants={navItemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link
+                href={item.disabled ? "#" : item.href}
+                className={cn(
+                  "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
+                  item.href.startsWith(`/${segment}`)
+                    ? "text-foreground"
+                    : "text-foreground/60",
+                  item.disabled && "cursor-not-allowed opacity-80"
+                )}
+              >
+                {item.title}
+              </Link>
+            </motion.div>
+          ))}
+        </nav>
+      ) : null}
+      <motion.button
+        className="flex items-center space-x-2 md:hidden"
+        onClick={() => setShowMobileMenu(!showMobileMenu)}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        {showMobileMenu ? <Icons.close /> : <Icons.menu />}
+        <span className="font-bold">Menu</span>
+      </motion.button>
+      {showMobileMenu && items && (
+        <MobileNav items={items}>{children}</MobileNav>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="config/routes.ts">
+export const routesConfig: any = {
+  mainNav: [
+    {
+      title: "Skills",
+      href: "/skills",
+    },
+    {
+      title: "Projects",
+      href: "/projects",
+    },
+    {
+      title: "Experience",
+      href: "/experience",
+    },
+    {
+      title: "Contributions",
+      href: "/contributions",
+    },
+    {
+      title: "Contact",
+      href: "/contact",
+    },
+  ],
+};
+</file>
+
+<file path="app/(root)/skills/page.tsx">
+import { Metadata } from "next";
+
+import PageContainer from "@/components/common/page-container";
+import SkillsCard from "@/components/skills/skills-card";
+import { pagesConfig } from "@/config/pages";
+import { skills } from "@/config/skills";
+
+export const metadata: Metadata = {
+  title: pagesConfig.skills.metadata.title,
+  description: pagesConfig.skills.metadata.description,
+};
+
+export default function SkillsPage() {
+  return (
+    <PageContainer
+      title={pagesConfig.skills.title}
+      description={pagesConfig.skills.description}
+    >
+      <SkillsCard skills={skills} />
+    </PageContainer>
+  );
+}
+</file>
+
+<file path="config/socials.ts">
+import { Icons } from "@/components/common/icons";
+
+interface SocialInterface {
+  name: string;
+  username: string;
+  icon: any;
+  link: string;
+}
+
+export const SocialLinks: SocialInterface[] = [
+  {
+    name: "Github",
+    username: "@Iqmaa",
+    icon: Icons.gitHub,
+    link: "https://github.com/Iqmaa",
+  },
+  {
+    name: "LinkedIn",
+    username: "Iqma",
+    icon: Icons.linkedin,
+    link: "https://www.linkedin.com/in/Iqma",
+  },
+  {
+    name: "Twitter",
+    username: "@Iqma__",
+    icon: Icons.twitter,
+    link: "https://x.com/Iqma__",
+  },
+  {
+    name: "Gmail",
+    username: "Iqma",
+    icon: Icons.gmail,
+    link: "mailto:hikmaholawore@gmail.com",
+  },
+];
+</file>
+
+<file path="config/site.ts">
+export const siteConfig = {
+  name: "Hikmah Olawore - Robotics Engineer",
+  authorName: "Iqma",
+  username: "Iqma",
+  description:
+    "Hikmah Olawore - Robotics Engineer working at the intersection of AI and hardware. Explore my projects, experience, and contributions in software development and AI.",
+  url: "https://iqmaa.github.io/",
+  links: {
+    twitter: "https://x.com/Iqma__",
+    github: "https://github.com/Iqmaa",
+    templateRepo: "https://github.com/Iqma__/my-portfolio",
+  },
+  ogImage:
+    "/Crypt.jpg",
+  iconIco:
+    "/favicon.ico",
+  logoIcon:
+    "/Cryptiq.png",
+  keywords: [
+    "Hikmah Olawore",
+    "Robotics Engineer",
+    "AI Engineer",
+    "Software Engineer",
+    "Machine Learning",
+    "Data Engineering",
+    "UBS",
+    "Python Developer",
+    "Hardware Developer",
+    "C/C++",
+    "AI Startups",
+    "Software Development",
+    "Web Developer",
+    "Frontend Developer",
+    "Tech Portfolio",
+  ],
+};
+</file>
+
+<file path="app/(root)/contact/page.tsx">
+import { Metadata } from "next";
+
+import PageContainer from "@/components/common/page-container";
+import GithubRedirectCard from "@/components/contact/github-redirect-card";
+import { ContactForm } from "@/components/forms/contact-form";
+import { pagesConfig } from "@/config/pages";
+
+export const metadata: Metadata = {
+  title: pagesConfig.contact.metadata.title,
+  description: pagesConfig.contact.metadata.description,
+};
+
+export default function ContactPage() {
+  return (
+    <PageContainer
+      title={pagesConfig.contact.title}
+      description={pagesConfig.contact.description}
+    >
+      <div className="flex flex-col lg:flex-row">
+        <div className="flex-1">
+          <ContactForm />
+        </div>
+        <div className="flex-1 flex justify-center ">
+          <GithubRedirectCard />
+        </div>
+      </div>
+    </PageContainer>
+  );
+}
+</file>
+
+<file path="app/(root)/layout.tsx">
+import { MainNav } from "@/components/common/main-nav";
+import { ModeToggle } from "@/components/common/mode-toggle";
+import { SiteFooter } from "@/components/common/site-footer";
+import { routesConfig } from "@/config/routes";
+
+interface MarketingLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function MarketingLayout({ children }: MarketingLayoutProps) {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <header className="container z-50 bg-background">
+        <div className="flex h-20 items-center justify-between py-6">
+          <MainNav items={routesConfig.mainNav}>
+            <div className="flex items-center gap-3">
+              <ModeToggle />
+            </div>
+          </MainNav>
+          <nav className="flex items-center gap-5">
+            <ModeToggle />
+          </nav>
+        </div>
+      </header>
+      <main className="container flex-1 pt-8">{children}</main>
+      <SiteFooter />
+    </div>
+  );
+}
+</file>
+
+<file path="config/pages.ts">
+import { ValidPages } from "./constants";
+
+type PagesConfig = {
+  [key in ValidPages]: {
+    title: string;
+    description: string;
+    metadata: {
+      title: string;
+      description: string;
+    };
+    // featuredDescription: string;
+  };
+};
+
+export const pagesConfig: PagesConfig = {
+  home: {
+    title: "Home",
+    description: "Welcome to my portfolio website.",
+    metadata: {
+      title: "Home",
+      description: "Iqma's portfolio website.",
+    },
+  },
+  skills: {
+    title: "Skills",
+    description: "Key skills that define my professional identity.",
+    metadata: {
+      title: "Skills",
+      description:
+        "Iqma's key skills that define his professional identity.",
+    },
+  },
+  projects: {
+    title: "Projects",
+    description: "Showcasing impactful projects and technical achievements.",
+    metadata: {
+      title: "Projects",
+      description: "Hikmah's projects in building web applications.",
+    },
+  },
+  contact: {
+    title: "Contact",
+    description: "Let's connect and explore collaborations.",
+    metadata: {
+      title: "Contact",
+      description: "Contact Hikmah.",
+    },
+  },
+  contributions: {
+    title: "Contributions",
+    description: "Open-source contributions and community involvement.",
+    metadata: {
+      title: "Contributions",
+      description:
+        "Hikmah's open-source contributions and community involvement.",
+    },
+  },
+  resume: {
+    title: "Resume",
+    description: "Hikmah's resume.",
+    metadata: {
+      title: "Resume",
+      description: "Hikmah's resume.",
+    },
+  },
+  experience: {
+    title: "Experience",
+    description: "Professional journey and career timeline.",
+    metadata: {
+      title: "Experience",
+      description:
+        "Hikmah's professional journey and experience timeline.",
+    },
+  },
+};
+</file>
+
+<file path="app/(root)/experience/page.tsx">
+import { Metadata } from "next";
+
+import PageContainer from "@/components/common/page-container";
+import Timeline from "@/components/experience/timeline";
+import { experiences } from "@/config/experience";
+import { pagesConfig } from "@/config/pages";
+import { siteConfig } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: `${pagesConfig.experience.metadata.title} | Professional Experience Timeline`,
+  description: `${pagesConfig.experience.metadata.description} Explore my professional journey and career milestones in software development.`,
+  keywords: [
+    "experience timeline",
+    "professional experience",
+    "software developer experience",
+    "developer portfolio",
+    "work experience",
+  ],
+  alternates: {
+    canonical: `${siteConfig.url}/experience`,
+  },
+};
+
+export default function ExperiencePage() {
+  return (
+    <PageContainer
+      title={pagesConfig.experience.title}
+      description={pagesConfig.experience.description}
+    >
+      <Timeline experiences={experiences} />
+    </PageContainer>
+  );
+}
+</file>
+
+<file path="config/constants.ts">
+export type ValidSkills =
+  | "Javascript"
+  | "HTML"
+  | "CSS"
+  | "Markdown"
+  | "Arduino"
+  | "Gazebo"
+  | "Fusion360"
+  | "Solidworks"
+  | "Electronics"
+  | "Linux"
+  | "Tinkercad"
+  | "C/C++"
+  | "Bootstrap"
+  | "Reverse engineering"
+  | "cryptography"
+  | "pentesting"
+  | "Python"
+  | "Docker"
+  | "Kubernetes"
+  | "PostgreSQL"
+  | "canva"
+  | "Git"
+  | "CI/CD"
+  | "IDA Pro"
+  | "ROS2"
+  | "ReadMe"
+  | "MKDocs"
+  | "Mintlify"
+  | "Postman"
+  | "Assembly"
+  | "Google Cloud"
+  | "Figma"
+  | "Supabase"
+  | "Vercel"
+  | "Netlify"
+  | "TensorFlow"
+  | "PyTorch"
+  | "Laravel"
+  | "Flutter"
+  | "Django"
+  | "FastAPI"
+  | "SQL"
+  | "SQL injection"
+  | "Web exploitation";
+
+export type ValidCategory =
+  | "AI/ML"
+  | "Robotics"
+  | "Electronics"  
+  | "3D Modeling"
+  | "Technical Writing"
+  | "API documentation"
+  | "Article writing"
+  | "Web Dev"
+  | "Mobile Dev"
+  | "Cybersecurity"
+  | "Penetration Testing"
+  | "Cryptography"
+  | "Reverse engineering";
+
+export type ValidExpType = "Robotics" | "Cybersecurity" | "Technical Writing";
+
+export type ValidPages =
+  | "home"
+  | "skills"
+  | "projects"
+  | "experience"
+  | "contact"
+  | "contributions"
+  | "resume";
+</file>
+
+<file path="app/layout.tsx">
+import "./globals.css";
+
+import { Inter as FontSans } from "next/font/google";
+import localFont from "next/font/local";
+
+import { ThemeProvider } from "@/components/common/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
+import { ModalProvider } from "@/providers/modal-provider";
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const fontHeading = localFont({
+  src: "../assets/fonts/CalSans-SemiBold.woff2",
+  variable: "--font-heading",
+});
+
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+export const metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [
+    {
+      name: siteConfig.authorName,
+      url: siteConfig.url,
+    },
+  ],
+  creator: siteConfig.username,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+    creator: `@${siteConfig.username}`,
+  },
+  icons: {
+    icon: siteConfig.iconIco,
+    shortcut: siteConfig.logoIcon,
+    apple: siteConfig.logoIcon,
+  },
+  manifest: `${siteConfig.url}/site.webmanifest`,
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
+  },
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
+  // Logic requiring GA_ID has been removed to allow static export without environment secrets.
+
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+          fontHeading.variable
+        )}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          themes={[
+            "light",
+            "dark",
+            "retro",
+            "cyberpunk",
+            "paper",
+            "aurora",
+            "synthwave",
+          ]}
+        >
+          {children}
+          {/* <Analytics /> removed to avoid missing ID errors */}
+          <Toaster />
+          <ModalProvider />
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
+</file>
+
+<file path="config/experience.ts">
+import { ValidSkills } from "./constants";
+
+export interface ExperienceInterface {
+  id: string;
+  position: string;
+  company: string;
+  location: string;
+  startDate: Date;
+  endDate: Date | "Present";
+  description: string[];
+  achievements: string[];
+  skills: ValidSkills[];
+  companyUrl?: string;
+  logo?: string;
+}
+
+export const experiences: ExperienceInterface[] = [ //add logos and links
+  {
+    id: "aurora",
+    position: "Robotics Intern (Competitive Robotics & Research)",
+    company: "Aurora Robotics",
+    location: "Lagos, Nigeria",
+    startDate: new Date("2026-04-01"),
+    endDate: "Present",
+    description: [
+      "Served as a robotics engineering intern on the research team and competitive robotics team",
+    ],
+    achievements: [
+      "Served as a robotics engineering intern on the research team and competitive robotics team",
+    ],
+    skills: ["Python", "C/C++", "Arduino", "Linux", "Electronics", "ROS2", "Tinkercad", "Fusion360", "Gazebo"],
+    companyUrl: "https://www.linkedin.com/company/aurora-robotics-in/",
+    logo: "/experience/aurora_robotics_logo.jfif",
+  },
+  {
+    id: "uds",
+    position: "Engineering Intern (Robotics)",
+    company: "Unilag Design Studio",
+    location: "Lagos, Nigeria",
+    startDate: new Date("2025-04-01"),
+    endDate: new Date("2026-04-01"),
+    description: [
+      "Served as a robotics engineering intern at the Unilag Design Studio where i represented the studio in competitions",
+      "served as mentor in various engineering traininiig initiatives for young females gettiing into tech and engineering",
+    ],
+    achievements: [
+      "Served as a robotics engineering intern at the Unilag Design Studio where i represented the studio in competitions",
+      "served as mentor in various engineering traininiig initiatives for young females gettiing into tech and engineering",
+    ],
+    skills: ["Python", "C/C++", "Arduino", "Linux", "Electronics", "ROS2", "Tinkercad", "Fusion360", "Gazebo"],
+    companyUrl: "https://www.linkedin.com/company/unilag-design-studio/posts/?feedView=all",
+    logo: "/experience/unilag_engineering_design_studio_logo.jfif",
+  },
+  {
+    id: "RAIN",
+    position: "Campus Co-Lead (Ambassador)",
+    company: "Robotics and Artificial Intelligence Network",
+    location: "Kwara, Nigeria",
+    startDate: new Date("2023-10-01"),
+    endDate: new Date("2024-03-01"),
+    description: [
+      "served as the co-lead for my campus branch",
+      "held trainings and workshops for engineering enthusiasts",
+    ],
+    achievements: [
+      "spoke at various events to increase awarness of engineering and robotics",
+      "Assisting beginners with projects",
+      "Collaborated with other initiatives to train people in robotics and embedded systems",
+    ],
+    skills: ["Python", "Arduino", "Electronics"],
+    companyUrl: "https://www.linkedin.com/company/103610588/admin/dashboard/",
+    logo: "/experience/RAIN_logo.jfif",
+  },
+  {
+    id: "zuri",
+    position: "Web Developer Intern",
+    company: "Zuri",
+    location: "Kwara, Nigeria",
+    startDate: new Date("2021-07-01"),
+    endDate: new Date("2022-07-01"),
+    description: [
+      "Developed websites using HTML, CSS, and Bootstrap.",
+      "Helped in content writing for the sites pages",
+    ],
+    achievements: [
+      "Developed the login and signup pages of the site.",
+      "Developed the landing page integrating carousels to improve user experience",
+      "Performed research on other vendor apps to improve project PIZE",
+      "Worked with other teams as the assistant team lead to meet deliverables and deadlines"
+    ],
+    skills: [
+      "HTML",
+      "CSS",
+      "Javascript",
+    ],
+    companyUrl: "https://www.linkedin.com/company/zuri-team/posts/?feedView=all",
+    logo: "/experience/zuri_team_logo.jfif",
+  },
+];
+</file>
+
+<file path="app/(root)/experience/[expId]/page.tsx">
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation"; // Changed from redirect for static export compatibility
+
+import { AnimatedSection } from "@/components/common/animated-section";
+import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
+import { Icons } from "@/components/common/icons";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import ChipContainer from "@/components/ui/chip-container";
+import { ResponsiveTabs } from "@/components/ui/responsive-tabs";
+import { experiences } from "@/config/experience";
+import { siteConfig } from "@/config/site";
+
+interface ExperienceDetailPageProps {
+  params: Promise<{
+    expId: string;
+  }>;
+}
+
+// 1. Mandatory for static export: Provide the list of IDs to pre-render
+export async function generateStaticParams() {
+  return experiences.map((experience) => ({
+    expId: experience.id,
+  }));
+}
+
+// 2. Explicitly force static rendering
+export const dynamic = "force-static";
+
+// Helper function to extract year from date
+const getYearFromDate = (date: Date): string => {
+  return new Date(date).getFullYear().toString();
+};
+
+// Helper function to get duration text
+const getDurationText = (
+  startDate: Date,
+  endDate: Date | "Present"
+): string => {
+  const startYear = getYearFromDate(startDate);
+  const endYear =
+    typeof endDate === "string" ? "Present" : getYearFromDate(endDate);
+  return `${startYear} - ${endYear}`;
+};
+
+export async function generateMetadata({
+  params,
+}: ExperienceDetailPageProps): Promise<Metadata> {
+  const { expId } = await params;
+  const experience = experiences.find((c) => c.id === expId);
+
+  if (!experience) {
+    return {
+      title: "Experience Not Found",
+    };
+  }
+
+  return {
+    title: `${experience.position} at ${experience.company} | Experience`,
+    description: `Detailed information about my role as ${experience.position} at ${experience.company}.`,
+    alternates: {
+      canonical: `${siteConfig.url}/experience/${expId}`,
+    },
+  };
+}
+
+export default async function ExperienceDetailPage({
+  params,
+}: ExperienceDetailPageProps) {
+  const { expId } = await params;
+  const experience = experiences.find((c) => c.id === expId);
+
+  if (!experience) {
+    // 3. Static exports handle 404s better via notFound() than dynamic redirects
+    notFound();
+  }
+
+  const tabItems = [
+    {
+      value: "summary",
+      label: "Summary",
+      content: (
+        <AnimatedSection delay={0.3}>
+          <div>
+            <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
+              Role Summary
+            </h3>
+            <ul className="space-y-3">
+              {experience.description.map((desc, idx) => (
+                <li
+                  key={idx}
+                  className="text-base leading-relaxed flex items-start gap-3"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  {desc}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </AnimatedSection>
+      ),
+    },
+    {
+      value: "achievements",
+      label: "Achievements",
+      content: (
+        <AnimatedSection delay={0.3}>
+          <div>
+            <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
+              Key Achievements
+            </h3>
+            <ul className="space-y-3">
+              {experience.achievements.map((achievement, idx) => (
+                <li
+                  key={idx}
+                  className="text-base leading-relaxed flex items-start gap-3"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  {achievement}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </AnimatedSection>
+      ),
+    },
+    {
+      value: "skills",
+      label: "Skills",
+      content: (
+        <AnimatedSection delay={0.3}>
+          <div>
+            <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
+              Technologies & Skills
+            </h3>
+            <ChipContainer textArr={experience.skills} />
+            <p className="mt-4 text-sm text-muted-foreground">
+              These are the primary technologies and skills utilized during my
+              time at {experience.company}.
+            </p>
+          </div>
+        </AnimatedSection>
+      ),
+    },
+  ];
+
+  return (
+    <ClientPageWrapper>
+      <div className="container max-w-4xl mx-auto py-8 px-4">
+        <AnimatedSection className="mb-6">
+          <Button variant="ghost" size="sm" className="mb-4" asChild>
+            <Link href="/experience">
+              <Icons.chevronLeft className="mr-2 h-4 w-4" />
+              Back to Experience
+            </Link>
+          </Button>
+        </AnimatedSection>
+
+        <AnimatedSection delay={0.2}>
+          <Card className="overflow-hidden rounded-lg border bg-background p-2 transition-all duration-300">
+            <CardHeader className="pb-6">
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                    {experience.logo && (
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg border-2 border-border overflow-hidden bg-white flex-shrink-0">
+                        <Image
+                          src={experience.logo}
+                          alt={experience.company}
+                          width={80}
+                          height={80}
+                          className="w-full h-full object-contain p-2"
+                        />
+                      </div>
+                    )}
+                    <div className="flex-1 text-center sm:text-left">
+                      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
+                        {experience.position}
+                      </h1>
+                      <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
+                        <span className="text-md font-medium text-muted-foreground">
+                          {experience.company}
+                        </span>
+                        {experience.companyUrl && (
+                          <a
+                            href={experience.companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground hover:text-foreground transition-colors"
+                          >
+                            <Icons.externalLink className="w-4 h-4" />
+                          </a>
+                        )}
+                      </div>
+                      <p className="text-muted-foreground">
+                        {experience.location}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex justify-center sm:justify-end">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20">
+                      {getDurationText(
+                        experience.startDate,
+                        experience.endDate
+                      )}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </CardHeader>
+
+            <CardContent>
+              <ResponsiveTabs items={tabItems} defaultValue="summary" />
+            </CardContent>
+          </Card>
+        </AnimatedSection>
+
+        <AnimatedSection delay={0.4} className="flex justify-center mt-8">
+          <Button variant="outline" asChild>
+            <Link href="/experience">
+              <Icons.chevronLeft className="mr-2 h-4 w-4" />
+              View All Experience
+            </Link>
+          </Button>
+        </AnimatedSection>
+      </div>
+    </ClientPageWrapper>
+  );
+}
+</file>
+
+<file path="components/forms/contact-form.tsx">
+"use client";
+
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+
+import { Icons } from "@/components/common/icons";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useModalStore } from "@/hooks/use-modal-store";
+
+const formSchema = z.object({
+  name: z.string().min(3, {
+    message: "Name must contain at least 3 characters.",
+  }),
+  email: z.string().email("Please enter a valid email."),
+  message: z.string().min(10, {
+    message: "Please write something more descriptive.",
+  }),
+  social: z.string().url().optional().or(z.literal("")),
+});
+
+export function ContactForm() {
+  const storeModal = useModalStore();
+
+  // const [open, setOpen] = useState(false);
+
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+      social: "",
+    },
+  });
+
+  // 2. Define a submit handler.
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      form.reset();
+
+      if (response.status === 200) {
+        storeModal.onOpen({
+          title: "Thankyou!",
+          description:
+            "Your message has been received! I appreciate your contact and will get back to you shortly.",
+          icon: Icons.successAnimated,
+        });
+      }
+    } catch (err) {
+      console.log("Err!", err);
+    }
+  }
+
+return (
+    <div className="flex flex-col items-center justify-center py-10 border rounded-xl bg-card">
+      <h3 className="text-xl font-semibold mb-4">Want to reach out?</h3>
+      <a href="cryptiqchronicles@gmail.com" 
+        className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors">
+        Send me an Email Directly
+      </a>
+    </div>
+  );
+}
+</file>
+
+<file path="package.json">
+{
+  "name": "minimal-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@next/third-parties": "16.0.6",
+    "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-dropdown-menu": "^2.1.1",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-tabs": "^1.1.0",
+    "@radix-ui/react-toast": "^1.2.1",
+    "@radix-ui/react-tooltip": "^1.1.2",
+    "@sendgrid/mail": "^8.1.4",
+    "@vercel/analytics": "^1.4.1",
+    "autoprefixer": "^10.4.20",
+    "caniuse-lite": "^1.0.30001792",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.5.0",
+    "lucide-react": "^0.468.0",
+    "next": "^16.0.10",
+    "next-themes": "^0.4.4",
+    "nodemailer": "^7.0.12",
+    "postcss": "^8.4.49",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-hook-form": "^7.54.2",
+    "react-icons": "^5.4.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^16.0.6",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "baseline-browser-mapping": "^2.10.29",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.6",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typescript": "^5"
+  }
+}
+</file>
+
+<file path="README.md">
+[![MasterHead](https://github.com/Iqmaa/Iqmaa/blob/main/github%20banner.png)](https://linktr.ee/Iqma)
+<!-- <h1 align="center">Hi 👋, I'm Iqma</h1> -->
+<h3 align="center"> Software | Hardware | Reverse Engineer </h3>
+<!-- <i><p> Philomath, Writer, Opensource & Volunteering</h3></i> -->
+<!-- <img align="right" alt= "coding" width ="400" src= "[https://media.licdn.com/dms/image/D4D03AQGch_ZzOUZsAg/profile-displayphoto-shrink_800_800/0/1686728087894?e=1695859200&v=beta&t=3gtQBA58StUsERmndczJ_U1nkGIRytao3z5c_7yXCv8](https://media.istockphoto.com/vectors/arab-girl-working-at-home-or-in-office-with-laptop-vector-id1150873865?k=6&m=1150873865&s=170667a&w=0&h=8zSyc1ET5xUf27hpTIlJjPBhnfr6DQYH7gJZhWjgOhc=)"> -->
+
+Link to portfolio website - https://iqmaa.github.io/Portfolio-website/
+</file>
+
+<file path="app/(root)/page.tsx">
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Script from "next/script";
+
+import { AnimatedSection } from "@/components/common/animated-section";
+import { AnimatedText } from "@/components/common/animated-text";
+import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
+import { Icons } from "@/components/common/icons";
+import ContributionCard from "@/components/contributions/contribution-card";
+import ExperienceCard from "@/components/experience/experience-card";
+import ProjectCard from "@/components/projects/project-card";
+import SkillsCard from "@/components/skills/skills-card";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { featuredContributions } from "@/config/contributions";
+import { experiences } from "@/config/experience";
+import { pagesConfig } from "@/config/pages";
+import { featuredProjects } from "@/config/projects";
+import { siteConfig } from "@/config/site";
+import { featuredSkills } from "@/config/skills";
+import { cn } from "@/lib/utils";
+import profileImg from "@/public/profile-img.jpg";
+
+export const metadata: Metadata = {
+  title: `${pagesConfig.home.metadata.title}`,
+  description:
+    "Iqma - Robotics Engineer working at the intersection of AI and hardware. Explore my projects, experience, and contributions.",
+  alternates: {
+    canonical: siteConfig.url,
+  },
+};
+
+export default function IndexPage() {
+  // Structured data for personal portfolio
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: siteConfig.authorName,
+    url: siteConfig.url,
+    image: siteConfig.ogImage,
+    jobTitle: "Robotics Engineer",
+    sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+  };
+
+  // Structured data for website as a software application (template)
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Next.js Portfolio Template",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    author: {
+      "@type": "Person",
+      name: siteConfig.authorName,
+      url: siteConfig.url,
+    },
+  };
+
+  return (
+    <ClientPageWrapper>
+      <Script
+        id="schema-person"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <Script
+        id="schema-software"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+
+      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
+          <Image
+            src={profileImg}
+            height={100}
+            width={100}
+            sizes="100vw"
+            className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
+            alt="Iqma - Robotics Engineer Portfolio"
+            priority
+          />
+          <AnimatedText
+            as="h1"
+            delay={0.2}
+            className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
+          >
+            Iqma
+          </AnimatedText>
+          <AnimatedText
+            as="h3"
+            delay={0.4}
+            className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
+          >
+            Robotics Engineer and Tech Hobbyist
+          </AnimatedText>
+          {/* <div className="mt-4 max-w-[42rem] text-center">
+            <p className="leading-normal text-muted-foreground text-sm sm:text-base">
+            Robotics Engineer working at the intersection of AI and hardware.
+            </p>
+          </div> */}
+
+          <div className="flex flex-col  items-center justify-center sm:flex-row sm:space-x-4 gap-3">
+            <AnimatedText delay={0.6}>
+              <Link
+                href={"/resume"}
+                target="_blank"
+                className={cn(buttonVariants({ size: "lg" }))}
+                aria-label="View resume"
+              >
+                <Icons.post className="w-4 h-4 mr-2" /> Resume
+              </Link>
+            </AnimatedText>
+            <AnimatedText delay={0.8}>
+              <Link
+                href={"/contact"}
+                rel="noreferrer"
+                className={cn(
+                  buttonVariants({
+                    variant: "outline",
+                    size: "lg",
+                  })
+                )}
+                aria-label="Contact Iqma"
+              >
+                <Icons.contact className="w-4 h-4 mr-2" /> Contact
+              </Link>
+            </AnimatedText>
+          </div>
+          <AnimatedText delay={1.2}>
+            <Icons.chevronDown className="h-6 w-6 mt-10" />
+          </AnimatedText>
+        </div>
+      </section>
+      <AnimatedSection
+        className="container space-y-6 bg-muted py-10"
+        id="skills"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.skills.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.skills.description}
+          </AnimatedText>
+        </div>
+        <SkillsCard skills={featuredSkills} />
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/skills">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+      </AnimatedSection>
+      <AnimatedSection
+        direction="right"
+        className="container space-y-6 py-10 my-14"
+        id="projects"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.projects.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.projects.description}
+          </AnimatedText>
+        </div>
+        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
+          {featuredProjects.map((exp, index) => (
+            <AnimatedSection
+              key={exp.id}
+              delay={0.1 * (index + 1)}
+              direction="up"
+            >
+              <ProjectCard project={exp} />
+            </AnimatedSection>
+          ))}
+        </div>
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/projects">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+        {/* <div className="mx-auto text-center md:max-w-[58rem]">
+                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                        See all the relevant experiences.
+                    </p>
+                </div> */}
+      </AnimatedSection>
+      <AnimatedSection
+        direction="down"
+        className="container space-y-6 bg-muted py-10 my-14"
+        id="contributions"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.contributions.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.contributions.description}
+          </AnimatedText>
+        </div>
+        <div className="mx-auto justify-center gap-4 md:w-full lg:grid-cols-3">
+          <ContributionCard contributions={featuredContributions} />
+        </div>
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/contributions">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+      </AnimatedSection>
+      <AnimatedSection
+        direction="left"
+        className="container space-y-6 py-10 my-14"
+        id="experience"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.experience.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.experience.description}
+          </AnimatedText>
+        </div>
+        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
+          {experiences.slice(0, 3).map((experience, index) => (
+            <AnimatedSection
+              key={experience.id}
+              delay={0.1 * (index + 1)}
+              direction="up"
+            >
+              <ExperienceCard experience={experience} />
+            </AnimatedSection>
+          ))}
+        </div>
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/experience">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+      </AnimatedSection>
+    </ClientPageWrapper>
+  );
+}
+</file>
+
+</files>
